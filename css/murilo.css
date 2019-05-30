@@ -1,0 +1,673 @@
+.centralizar_elemento{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centralizarY{
+  display: flex;
+  align-items: center;
+}
+
+.elemento_direita{
+  float: right;
+}
+
+.elemento_esquerda{
+  float: left;
+}
+
+.titulo_sections{
+    text-align: center;
+    font-size: 3em;
+    font-family: Helvetica;
+}
+
+/* ******************* SECTION 1 - ÁREA DE ENQUETE ***************** */
+.section-two{
+  width: 100%;
+  height: 690px;
+  background-image: url(../img/7up-mojito_hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-two h1{
+  padding-top: 100px;
+  color: #fff;
+}
+
+.section-two h1::after{
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
+  display: block;
+}
+
+.div-geral-section-imagens{
+  width: 1200px;
+  height: 330px;
+  margin-top: 55px;
+}
+
+.imagens-section-two{
+  width: 530px;
+  height: 100%;
+  float: left;
+  margin-left: 70px;
+}
+
+.caixa_enquete{
+  width: 450px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.titulo_enquete{
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-family: Helvetica;
+}
+
+.itens_enquete{
+  font-size: 18px;
+  min-width: 120px;
+  width: auto;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: Gadugi;
+}
+
+.btn_votar{
+  width: 150px;
+  background-color: #5fa83a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: Gadugi;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn_votar:hover{
+  background-color: #226b17;
+  transition: 0.5s;
+}
+/* *************************** SECTION 3 ************************ */
+.section-three{
+  width: 100%;
+  height: 640px;
+  background-color: #15233a;
+}
+
+
+.section-three-conteudo{
+  width: 1150px;
+  height: 320px;
+  padding: 5px;
+  background-color: #fff;
+  margin-top: 30px;
+  font-family: coolvetica;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.section-three h1{
+  padding-top: 100px;
+  color: #fff;
+}
+
+.section-three h1::after{
+  content: '';
+  width: 50px;
+  background-color: #fff;
+  height: 2px;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
+  display: block;
+}
+
+.section-three-conteudo-infomarcao{
+  width: 65%;
+  padding-left: 5%;
+  padding-top: 10px;
+  height: 310px;
+  float: left;
+}
+
+.section-three-conteudo-titulo{
+  font-size: 35px;
+  font-family: Helvetica;
+}
+
+.section-three-conteudo-texto{
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Gadugi;
+  font-size: 23px;
+}
+
+.section-three-conteudo-infomarcao button{
+  width: 200px;
+  background-color: #15233a;
+  color: white;
+  padding: 14px 20px;
+  margin: 60px 0;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Gadugi;
+  border-radius: 20px;
+}
+
+.section-three-conteudo-infomarcao button:hover{
+  background-color: #1e3254;
+  transition: 0.5s;
+}
+
+
+.section-three-conteudo-imagem{
+  width: 25%;
+  padding-left: 5%;
+  height: 320px;
+  float: left;
+}
+
+.section-three-conteudo-imagem img{
+  width: 205px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+
+/* *************************** SECTION 4 ************************ */
+.section-four{
+  width: 100%;
+  height: 770px;
+  background-color: #e57510;
+
+}
+
+.section-four h1{
+  padding-top: 100px;
+  color: #fff;
+}
+
+.section-four h1::after{
+  content: '';
+  width: 50px;
+  height: 2px;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
+  background-color: #fff;
+  display: block;
+}
+
+.section-four-conteudo{
+  width: 1000px;
+  height:500px;
+  font-family: coolvetica;
+  margin-top: 50px;
+}
+
+.caixa_noticia{
+  background-color: #fff;
+  padding: 10px;
+  height: 227px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caixa_noticia-imagem{
+  width: 30%;
+  height: 227px;
+  float: left;
+}
+
+.caixa_noticia-imagem img{
+  width: 256px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.caixa_noticia-infomarcao{
+  width: 70%;
+  height: 227px;
+  float: left;
+}
+
+.informacoes{
+  padding: 15px;
+
+}
+
+.caixa_noticia-titulo{
+  font-size: 35px;
+  font-family: Helvetica;
+}
+
+.caixa_noticia-texto{
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Gadugi;
+}
+
+.caixa_noticia-data{
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: right;
+  font-family: Gadugi;
+}
+
+.caixa_noticia-botao{
+  width: 100%;
+  text-align: right;
+}
+
+.caixa_noticia-botao button{
+  width: 200px;
+  background-color: #15233a;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Gadugi;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.caixa_noticia-botao button:hover{
+  background-color: #1e3254;
+  transition: 0.5s;
+}
+
+.caixa_email{
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  float: none;
+  width: 560px;
+  height: 90px;
+}
+
+.caixa_input{
+  float: left;
+  width: 450px;
+}
+
+.caixa_input label{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.caixa_input input{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  margin-top: 25px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.caixa_botao_email{
+  float: left;
+}
+
+.caixa_botao_email button{
+  width: 100px;
+  background-color: #15233a;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Gadugi;
+  border-radius: 20px;
+}
+
+.caixa_botao_email button:hover{
+  background-color: #1e3254;
+  transition: 0.5s;
+}
+
+
+/* *********** SECTION 5 ************ */
+.section-five{
+  width: 100%;
+  height: 700px ;
+  background-image: url(../img/sustentavel.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-five-conteudo{
+  width: 1200px;
+  min-height: 305px;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: coolvetica;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+
+}
+
+.section-five h1{
+  padding-top: 80px;
+  color: #fff;
+}
+
+.section-five h1::after{
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  display: block;
+}
+
+.caixa_sustentavel-infomarcao{
+  width: 70%;
+  height: 300px;
+  float: left;
+  background-color: #fff;
+}
+
+.caixa_sustentavel-titulo{
+  font-size: 35px;
+  font-family: Helvetica;
+}
+
+.caixa_sustentavel-texto{
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Gadugi;
+}
+
+.caixa_sustentavel-imagem{
+  width: 30%;
+  height: 300px;
+  float: left;
+  background-color: #fff;
+}
+
+.caixa_sustentavel-imagem img{
+  width: 300px;
+  height: 199px;
+  border-radius: 5px;
+}
+
+
+/* ******************* SECTION 6 ******************** */
+
+.section-six{
+  width: 100%;
+  height: 750px;
+}
+
+.section-six h1{
+  padding-top: 80px;
+}
+
+.section-six h1::after{
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  display: block;
+}
+
+.section-six-conteudo{
+  width: 1200px;
+  height: 770px;
+}
+
+.section-six-div-products{
+  width: 100%;
+  height: 500px;
+}
+
+
+.section-six-products{
+  width: 260px;
+  height: 420px;
+  padding-top: 20px;
+  margin-left: 32px;
+  float: left;
+}
+
+.section-six-products:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  transition: 0.5
+}
+
+.section-six-image-products{
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.section-six-image-products img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.section-six-text-products{
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-six-text-products h2{
+  margin-top: 15px;
+  font-size: 22px;
+  color: #15233a;
+  font-family: Gadugi;
+  color: #000;
+}
+
+.section-six-text-products p{
+  margin-top: 15px;
+  color: #010101;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-six-button{
+  width: 100%;
+  height: 55px;
+  text-align: center;
+}
+.section-six-button input[type="button"]{
+  width: 190px;
+  height: 0px;
+  background-color: #5fa83a;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Gadugi;
+  visibility: hidden;
+}
+.section-six-button input[type="button"]:hover{
+  background-color: #226b17;
+  transition: 0.5s;
+}
+
+
+.section-six-products:hover input[type="button"]{
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(27,31,35,.2);
+  margin-top: 5px;
+  height: auto;
+  transition: 0.5s;
+  visibility: visible;
+}
+
+
+/* ***************** SECTION 8 ****************** */
+
+.section-eight{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.section-eight h1{
+  padding-top: 80px;
+}
+
+.section-eight h1::after{
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  display: block;
+}
+
+.section-eight-conteudo{
+  width: 1000px;
+  font-family: coolvetica;
+}
+
+.caixa_comentario{
+  width: 700px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.section-eight-usuario{
+  width: 100%;
+}
+
+.section-eight-usuario-imagem{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.section-eight-usuario-imagem img{
+  width: 45px;
+  height: 45px;
+}
+
+.section-eight-usuario-nome{
+  width: 640px;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 45px;
+  font-size: 25px;
+  float: left;
+  font-family: Helvetica;
+}
+
+
+.section-eight-usuario-comentario{
+  width: 640px;
+  font-size: 20px;
+  padding-left: 60px;
+  text-align: justify;
+  padding-bottom: 30px;
+  font-family: Gadugi;
+}
+
+
+.section-eight-resposta{
+  width: 100%;
+  height: 80px;
+  font-family: Helvetica;
+}
+
+.section-eight-resposta .caixa_input{
+  float: left;
+  width: 500px;
+  padding-left: 50px;
+}
+
+.section-eight-resposta .caixa_input label{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.section-eight-resposta .caixa_input input{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.section-eight-resposta .caixa_botao_email{
+  float: left;
+}
+
+.section-eight-resposta .caixa_botao_email button{
+  width: 100px;
+  background-color: #15233a;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 31px;
+  margin-left: 10px;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: 
+  Gadugi;
+}
+
+.section-eight-resposta .caixa_botao_email button:hover{
+  background-color: #1e3254;
+  transition: 0.5s;
+}

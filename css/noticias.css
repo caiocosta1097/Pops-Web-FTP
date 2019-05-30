@@ -1,0 +1,89 @@
+/* remove a borda azul padrão dos inputs ao serem focados */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+    outline: none;
+}
+
+/* PADRÕES */
+.padding_noticias{
+    padding: 10px; 
+}
+
+/* ****** Contéudo ****** */
+
+/* CAIXA GERAL DA NOTICIA */
+#caixa_geral_noticias{
+    width: 1200px;
+    min-height: 400px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Caixa que guarda todas as noticias */
+.caixa_principal_noticias{
+    width: 80%;
+    min-height: 200px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 1px solid #dadce0;
+    transition: 0.4s;
+}
+
+.caixa_principal_noticias:hover{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);  
+    color: #e57510;
+    transition: 0.4s;
+}
+
+.caixa_titulo_noticias:hover > .data_noticias{
+    color: #000;
+}
+
+
+.imagem_noticias{
+    width: 200px;
+    min-height: 200px;
+    height: auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    float: left;
+}
+
+.caixa_titulo_noticias{
+    width: 74%;
+    min-height: 200px;
+    height: auto;
+    margin-left: 25px;
+   
+    float: left;
+}
+
+.caixa_titulo_noticias > .titulo_noticias{
+    color: #000;
+}
+
+.titulo_noticias{
+    font-size: 30px;
+    text-align: left;
+    font-family: Helvetica;
+}
+
+.texto_noticias{
+    font-size: 22px;
+    font-family: Gadugi;
+    text-align: justify;
+}
+
+.data_noticias{
+    text-align: right;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: Gadugi;
+}

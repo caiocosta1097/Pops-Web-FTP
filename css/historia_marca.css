@@ -1,0 +1,30 @@
+
+
+.centralizar_caixa{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa_historia_marca{
+    width: 800px;
+    min-height: 250px;
+    height: auto;
+    padding-top: 30px;
+}
+
+.texto{
+    width: 700px;
+    min-height: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.texto p{
+    word-wrap: break-word; /*quebra de linha */
+    font-size: 20px;
+    text-align: justify;
+    font-family: Gadugi;
+    color: #000000;
+}

@@ -1,0 +1,207 @@
+/* Padrões */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+    outline: none;
+}
+.font-texto{
+    font-family: Helvetica;
+}
+
+.color-blue{
+    color: #000;
+}
+
+.font-titulo{
+    font-family: Helvetica;
+}
+
+.font-negrito{
+    font-weight: bold;
+}
+
+.div_direita{
+    float: right;
+}
+
+.div_esquerda{
+    float: left;
+}
+
+.imagem_efeito{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.10), 0 2px 2px rgba(0,0,0,0.10);
+}
+
+.centralizar_caixa{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ********* HEADER ************ */
+.caixa_geral_pessoa_fisica{
+    width: 1200px;
+    min-height: 680px;
+    height: auto;
+    overflow: hidden;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caixa_central_pessoa_fisica{
+    width: 1050px;
+    min-height: 650px;
+    height: auto;
+    overflow: hidden;
+}
+
+.header_painel{
+    width: 100%;
+    height: 60px;
+}
+
+.img_header_esquerda{
+    width: 50px;
+    height: 50px;
+
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.img_header_direita{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+/* **************** FOTO E NOME **************** */
+.caixa_identidade{
+    width: 250px;
+    height: 245px;
+    padding-top: 10px;
+    border-radius: 100%;
+    float: left;
+    border-bottom: 2px solid rgb(231, 231, 231);
+}
+#guardaFtoPerfil{
+    width: 250px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa_identidade img{
+    border-radius: 50%;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.informacoes_pessoa_fisica{
+    width: 705px;
+    float: left;
+    min-height: 135px;
+    height: auto;
+    overflow: hidden;
+
+
+    margin-left: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(231, 231, 231);
+}
+h6{
+    font-size:20px;
+    font-family: Helvetica;
+    text-align: center;
+    padding-top:5px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.caixa_guarda_inf{
+    width: 323px;
+    height: 210px;
+    float: left;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caixa_guarda_inf2{
+    width: 270px;
+    height: 210px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 25px;
+}
+.caixa_guarda_inf3{
+    width: 380px;
+    height: 210px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin-right: 25px;
+}
+.caixa_titulo_inf{
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 3px;
+
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+/* ************ COMENTÁRIO ************ */
+
+#comentario{
+    width: 969px;
+    height: 200px;
+    padding-top: 50px;
+    margin-left: 10px;
+    clear: both;
+}
+
+#comentario{
+    font-size: 23px;
+}
+
+/* ******** BOTÃO ******* */
+
+#txtComentario{
+    width: 99%;
+    height: 100px;
+    border: none;
+    text-align: initial;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    resize: none;
+    font-size: 20px;
+    color: rgb(36, 34, 34);
+}
+
+#txtComentario:focus{
+    border: 2px solid #15233a;
+}
+
+.botao_comentario{
+    width: 200px;
+    height: 40px;
+    background-color: #e57510;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: Helvetica;
+    cursor: pointer;
+    color: #fff;
+}
+
+.botao_comentario:hover{
+   color: #fff;
+   background-color: #cc6508;
+}
+.iconEditarFis{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 340px;
+    cursor:pointer;
+}

@@ -1,0 +1,135 @@
+/* remove a borda azul padrão dos inputs ao serem focados */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+    outline: none;
+}
+
+/* *********** PADRÕES ************ */
+.label_estilo{
+    font-size: 18px;
+    font-family: Helvetica;
+    margin-left: 5px;
+    color: #000;
+}
+
+
+.font-texto{
+    font-family: Helvetica;
+}
+
+.div_direita{
+    float: right;
+}
+
+.div_esquerda{
+    float: left;
+}
+
+/* ****** Conteúdo ******* */
+
+.caixa_central_pagamento{
+    width: 950px;
+    height: 300px;
+    padding-top: 25px;
+    margin-left: 170px;
+
+}
+
+.caixa_grupo_form{
+    width: 400px;
+    height: 400px;
+
+}
+
+.caixa_form_pagamento{
+    width: 790px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa_grupo_form{
+    width: 380px;
+    height: 250px;
+    margin-bottom: 70px;
+
+}
+
+.caixa_campos_form{
+    width: 365px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.input_estilo{
+  width: 350px;
+  padding: 10px 3%;
+  font-size: 1em;
+  border: 1px solid #d5dbdb;
+  border-radius: 4px;
+  color: #666;
+  outline: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* tamanho dos input */
+.input_titular_e_cartao{
+    width: 350px;
+}
+
+.input_mes{
+  width: 90px;
+  padding: 10px 3%;
+  font-size: 1em;
+  border: 1px solid #d5dbdb;
+  border-radius: 4px;
+  color: #666;
+  outline: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.input_ano{
+  width: 120px;
+  padding: 10px 3%;
+  font-size: 1em;
+  border: 1px solid #d5dbdb;
+  border-radius: 4px;
+  color: #666;
+  outline: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+.input_seguranca{
+    width: 240px;
+}
+
+.margin_top_form_2{
+    margin-top: 80px;
+}
+
+
+.botao_pagamento{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 19px;
+    color: #fff;
+    background-color: #416baf;
+    border: none;
+    margin-top: 10px;
+}
+
+.botao_pagamento:hover{
+    cursor: pointer;
+    background-color: #15233a;
+    color:#fff;
+    transition: 0.4s;
+}

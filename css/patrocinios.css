@@ -1,0 +1,61 @@
+
+#caixa_central_imagens{
+    width: 1200px;
+    min-height: 590px;
+    padding-top: 20px;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.caixa_imagem{
+    width: 450px;
+    height: 250px;
+    border: 1px solid #ccc;
+    margin-left: 100px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+    float: left;
+
+}
+.caixa_imagem:hover{
+    box-shadow: 5px -2px 5px 2px rgba(227,224,227,0.4);
+}
+.caixa_imagem img{
+    max-width: 100%;
+    transition: all 0.5s;
+}
+
+.caixa_imagem img:hover{
+    transform: scale(1.1);
+}
+#conteudo_chamativo h1{
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    color:"#000000";
+    font-family:Helvetica;
+}
+.imgPatrocinio{
+    width: 450px;
+    height: 250;
+}
+.descricaoPatrocinio{
+  width: 430px;
+  height: 18px;
+  background-color:#e5751057;
+  position: absolute;
+  margin-top: -40px;
+  z-index:2;
+  color:"#000000";
+  font-family:Gadugi;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}

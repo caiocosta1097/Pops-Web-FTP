@@ -1,0 +1,257 @@
+/* remove a borda azul padrão dos inputs ao serem focados */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+    outline: none;
+}
+
+/* *********** PADRÕES ************ */
+
+
+/* imagem */
+.sombra_imagens{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* ****** POP'S na escola ******* */
+.div_centro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* labels do form */
+.label_font{
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: #666;
+    padding: 3px;
+
+}
+
+/* inputs do form */
+.borda_inputs{
+    border-radius: 2px;
+}
+
+/* largura fixa dos inputs
+   nome da escola, nome do diretor, email, logradouro
+*/
+.largura_fixa_inputs_1{
+    width: 310px;
+}
+
+/* Telefone */
+.largura_fixa_inputs_2{
+    width: 180px;
+}
+
+/* Nº */
+.largura_fixa_inputs_3{
+    width: 85px;
+}
+
+/* Largura fixa das divs */
+.largura_fixa_div{
+    width: 80%;
+}
+
+.largura_fixa_div_2{
+    width: 20%;
+}
+
+.largura_fixa_div_3{
+    width: 50%;
+}
+
+.largura_fixa_div_4{
+    width: 100%;
+}
+
+/* ********* AVISO *********** */
+
+.aviso_form{
+    color: #ffe600;
+    padding-left: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+/* ************* CONTEUDO ************** */
+
+/* ******* Caixa chamativa ******* */
+.caixa_pops_escola{
+    width: 100%;
+    height: 345px;
+    /*background: linear-gradient(to right, rgba(216, 136, 45, 0), rgba(229, 117, 16, 0.4)); */
+    text-align: center;
+}
+
+
+/* Caixa central do texto e imagem */
+.caixa_texto_imagem{
+    width: 1100px;
+    height: 330px;
+}
+
+/* Formatação do texto */
+#texto_formatacao{
+    max-width: 370px;
+    padding-left: 120px;
+    font-size: 1.2em;
+    padding-bottom: 30px;
+    font-family: Gadugi;
+    padding-top: 50px;
+    text-align: justify;
+    float: left;
+}
+
+.img_chamativa{
+	margin-top: 10px;
+}
+
+/* ***** CADASTRO  POP'S nas escolas ****** */
+#caixa_geral_cadastro{
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    overflow: hidden;
+	padding-top: 20px;
+    /*background: linear-gradient(to right, rgb(21, 35, 58), rgb(46, 65, 96), rgb(74, 89, 112));*/
+    background-color: #d9e6fc;
+}
+
+/* caixa central do cadastro */
+.caixa_central_cadastro{
+    width: 765px;
+    height: 680px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.caixa_central_cadastro h1{
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #15233a;
+    font-family: Helvetica;
+}
+
+/* caixa principal do form */
+.caixa_principal_formulario{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 400px;
+    float: left;
+    font-family: Helvetica;
+    margin-left: 32px;
+}
+
+.caixa_formulario{
+    width: 100%;
+    height: 100px;
+}
+/* ******* inputs do form direito  ******* */
+.formatacao_inputs{
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #416baf;
+    margin-bottom: 30px;
+    transition: 0.4s;
+    font-size: 17px;
+    color: #416baf;
+    background-color: transparent;
+    font-family: Gadugi;
+}
+
+#txtMotivo{
+    width: 85%;
+    height: 100px;
+    color: #416baf;
+    font-size: 17px;
+    background-color: #d9e6fc;
+    resize: horizontal;
+    border: 2px solid #416baf;
+    margin-top: -25px;
+}
+
+::placeholder{
+    color: #334053;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.5s;
+}
+
+.caixa_input{
+    height: 100px;
+    float: left;
+   
+}
+
+.botao{
+    width: 200px;
+    height: 45px;
+    clear: both;
+    margin: auto;
+    color: #fff;
+    font-family: Gadugi;
+    font-size: 20px;
+    background-color: #416baf;
+    border: none;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.botao:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: #fff;
+    background-color: #15233a;
+}
+
+.aviso{
+    width: 500px;
+    min-height: 100px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding: 5px;
+    clear: both;
+    /*background-color: rgb(247, 255, 129);*/
+    border: 2px solid #15233a;
+
+}
+
+.aviso strong{
+    font-size: 35px;
+    font-family: Helvetica;
+    color: #15233a;
+    padding-left: 3px;
+}
+
+.aviso p{
+    font-size: 19px;
+    font-family: Gadugi;
+    padding: 5px;
+    color: #1a1d22;
+    text-align: justify;
+}
+
+/* **** IMAGENS ****/
+#caixa_imagens_pops{
+    width: 100%;
+    height: 400px;
+}
+
+.caixa_central_imagens_pops{
+    width: 1100px;
+    padding-top: 50px;
+    height: 350px;
+}
+
+.imagens{
+    width: 300px;
+    height: 300px;
+    background-color: #666;
+    margin-left: 50px;
+    float: left;
+}

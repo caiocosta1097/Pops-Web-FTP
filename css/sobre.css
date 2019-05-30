@@ -1,0 +1,79 @@
+
+/* PADRÕES */
+.centralizar_div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa_crescer{
+    height: auto;
+    overflow: hidden;
+}
+
+.div_direita{
+    float: right;
+}
+
+.div_esquerda{
+    float: left;
+}
+
+
+
+/* ***** CONTEUDO ******/
+
+.caixa_geral_sobre{
+    width: 1200px;
+    min-height: 560px;     
+}
+
+.caixa_principal_sobre{
+    width: 99%;
+    min-height: 200px;
+    padding-top: 25px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+     
+}
+
+.caixa_titulo_e_imagem{
+    width: 240px;
+    height: 100px; 
+}
+
+.imagem{
+    width: 100px;
+    height: 50px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.titulo{
+    width: 175px;
+    min-height: 180px;
+    font-family: Helvetica;
+    height: auto;
+    font-size: 35px; 
+    word-wrap: break-word;   
+}
+.titulo-sobre{
+    width: 150px;
+    min-height: 50px;
+    font-family: Helvetica;
+    height: auto;
+    font-size: 35px; 
+    word-wrap: break-word; 
+    margin-left: -60px;
+}
+
+
+.caixa_texto{
+    width: 700px;
+    min-height: 80px;
+    text-align: center;
+    font-family: Gadugi;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -100px;
+}

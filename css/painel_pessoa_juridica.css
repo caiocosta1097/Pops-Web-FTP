@@ -1,0 +1,330 @@
+/* caixa do título da página */
+
+p{
+    color: #000;
+}
+
+h1{
+    color: #e57510;
+}
+
+
+.caixa_crescer{
+    height: auto;
+    overflow: hidden;
+}
+
+.centralizar_caixa{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centralizar_texto{
+    text-align: center;
+}
+
+.elemento_direita{
+    float: right;
+}
+
+.elemento_esquerda{
+    float: left;
+}
+
+.font-titulo{
+    font-family: Helvetica;
+    text-align: center;
+}
+
+
+.font-texto{
+    font-family: Helvetica;
+    font-size: 18px;
+    padding-bottom: 5px;
+
+}
+
+.font-negrito{
+    font-weight: bold;
+}
+
+
+/* caixa central que ocupa 1200px de largura */
+.caixa_central_pj{
+    width: 1200px;
+    min-height: 1270px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+/* ************** Header *************** */
+
+.caixa_painel_pj{
+    width: 950px;
+    min-height: 1260px;
+
+}
+
+#caixa_header_pj{
+    width: 100%;
+    height: 70px;
+
+}
+
+#caixa_header_pj img{
+    margin: 5px;
+}
+
+
+/* ************** Caixa Identidade *************** */
+.caixa_identidade_pj{
+    width: 90%;
+    height: 290px;
+    margin-top: 10px;
+    
+    border-bottom: 1px solid #ccc;
+}
+
+.caixa_imagem_pj{
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.identidade_pj_font{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+/* ************** Caixa Dados *************** */
+.caixa_geral_dados{
+    width: 85%;
+    min-height: 230px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grupo_form{
+    width: 400px;
+    min-height: 220px;
+
+}
+
+.texto_dados{
+    width: 100%;
+    min-height: 35px;
+    padding-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+.texto_dados p{
+    display: inline;
+    font-size: 19px;
+}
+
+.caixa_num_cep{
+    width: 50%;
+    height: 35px;
+    padding-top: 15px;
+    margin-top: -15px;
+}
+
+/* ************** CRIAR ANÚNCIOS ************** */
+
+.caixa_criar_anuncios{
+    width: 85%;
+    height: auto;
+    min-height:350px;
+    overflow:hidden;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caixa_criar_anuncios h1{
+    margin-bottom: 20px;
+}
+
+#container_card_anuncio{
+    width: inherit;
+    height: 230px;
+}
+
+#container_perfil{
+    width: inherit;
+    height: 230px;
+}
+
+.card_anuncio {
+    width: 210px;
+    height: 260px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    font-family: Helvetica;
+    margin-right: 10px;
+}
+
+.card_img_anuncio{
+    width: inherit;
+    height: 140px;
+}
+
+.img_anuncio{
+    width: inherit;
+    height: inherit;
+    
+}
+
+.click_me{
+   cursor: pointer;
+   color: #000;
+}
+
+.desc_anuncio{
+    width: inherit;
+    height: 100px;
+    font-size: 19px;
+
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.options{
+    width: inherit;
+    height: 15px;
+    padding-top: 3px;
+    color: #fff;
+    text-align: center;
+    background-color: #15233a;
+}
+
+.botao_padrao_pj{
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #15233a;
+    font-weight: bold;
+    background-color: #e57510;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+/* ********* CAIXA ACESSO ********** */
+.caixa_acesso{
+    width: 85%;
+    height: auto;
+    min-height:410px;
+    overflow:hidden;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caixa_acesso_grupo{
+    width: 45%;
+    height: 300px;
+
+}
+
+.caixa_botao_acesso{
+    width: 100%;
+    height: 100px;
+
+}
+
+.caixa_botao_acesso h1{
+    margin-bottom: 20px;
+}
+
+/* caixa acessos adicionados */
+.caixa_acessos_adicionados{
+    width: 100%;
+    height: 230px;
+
+}
+
+.caixa_acessos_adicionados h1{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.caixa_users_add{
+    width: 85%;
+    height: 30px;
+    padding-top: 10px;
+
+    margin-top: 15px;
+}
+
+.caixa_users_add p{
+    display: inline;
+}
+
+.caixa_users_add img{
+    margin-top: -9px;
+}
+
+.aviso_pj{
+    width: 50%;
+    height: 70px;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #000;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+/* ************** Meus Pedidos ************** */
+
+/* titulos */
+.caixa_meus_pedidos{
+    width: 85%;
+    min-height: 120px;
+    
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.caixa_meus_pedidos h1{
+    padding-bottom: 20px;
+    font-family: Gadugi;
+}
+
+.caixa_titulo_mp{
+    width: 99%;
+    height: 30px;
+    margin-bottom: 5px;
+
+
+}
+
+.titulos_mp{
+    width: 32%;
+    height: 25px;
+    padding-top: 5px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    font-size: 19px;
+    font-family: Gadugi;
+}
+
+/* resultados */
+.font-titulos_res{
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.titulo_pedido{
+    font-family: Gadugi;
+}

@@ -1,0 +1,66 @@
+.modal-acompanhar-pedido{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-acompanhar-pedido{
+  width: 85%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.header-acompanhar-pedido h3{
+  text-align: center;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.linha{
+  width: 85%;
+  border: 1px solid #cccdd5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-acompanhar-pedido{
+  width: 850px;
+  height: 230px;
+  background-color: white;
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.icone-status-pedido{
+  width:130px;
+  height: 220px;
+  background-color: white;
+  float: left;
+  margin-left: 11px;
+  margin-top: 10px;
+}
+
+.texto-status-pedido{
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.imagem-status-pedido{
+  width:130px;
+  height:130px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius:50%;
+  border: solid 0.5px black;
+}

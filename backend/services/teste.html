@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Anúncios</title>
+    <script src="../../js/jquery.js"></script>
+  
+</head>
+<body>
+    <table id="table">
+      
+    </table>
+    <button type="button" id="btn">Testar WebService</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost/pops-site/backend/services/LoginService.php",
+                    dataType: "json",
+                    data: {"user": 'carlos', "senha": '123'},
+                    success: function(data){
+                        //var obj = JSON.parse(data);
+                        console.log(data);
+                        var html = `
+                            <tr>
+                                <td>${data.cnpj}</td>
+                                <td>${data.nome_fantasia}</td>
+                                <td>${data.status}</td>
+                                <td>${data.senha}</td>
+                            </tr>
+                        `;
+                    $("#table").html(html);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

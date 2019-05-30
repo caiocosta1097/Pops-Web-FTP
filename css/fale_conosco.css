@@ -1,0 +1,135 @@
+/* remove a borda azul padrão dos inputs ao serem focados */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+    outline: none;
+}
+/**************  PADRÕES **************/
+.font-texto{
+    font-family: Gadugi;
+}
+
+
+.margin-direita-contato{
+    margin-left: 20px;
+}
+
+
+/************** CONTÉUDO **************/
+
+/* *** caixa central que ocupa 1100 de width *** */
+.caixa_central_fl{
+    width: 940px;
+    min-height: 735px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+}
+
+
+/* *** div do formulário *** */
+.caixa_form_fl{
+    width: 800px;
+    min-height: 600px;
+    margin-top: 30px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+}
+
+/* div que contém os campos e os labels */
+.campos-form{
+    width: 90%;
+    min-height: 80px;
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    /*background-color: #FF3;*/
+}
+
+/* texto do formulário Nome:, Email:, etc */
+.label{
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #000;
+}
+
+/* input text dos campos */
+.campos-form input[type="text"],[type="email"]{
+    width: 99%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+	border-bottom: 2px solid #15233a;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.5s;
+}
+
+/* div contato que contém Telefone e Celular */
+.caixa_contato{
+    width: 48%;
+    height: 80px;
+    float: left;
+    /*background-color: #F3d;*/
+}
+
+/* ComboBox do tipo de contato*/
+.slt-form{
+    width: 48%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: Gadugi;
+    color: #666;
+    border-bottom: 2px solid #15233a;
+}
+
+
+/* text area */
+.observacao{
+    height: 145px;
+    width: 47%;
+    border: 2px solid #15233a;
+}
+
+/* Botão Enviar */
+.caixa_botao{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 200px;
+    height: 45px;
+}
+
+#btnEnviar{
+    width: 200px;
+    height: 45px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Gadugi;
+    font-size: 18px;
+    background-color: #416baf;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: Helvetica;
+}
+
+#btnEnviar:hover{
+    background-color: #15233a;
+    transition: 1.5;
+}

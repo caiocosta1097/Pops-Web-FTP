@@ -1,0 +1,244 @@
+/* remove a borda azul padrão dos inputs ao serem focados */
+a:focus, button:focus, input:focus, textarea:focus, select:focus, option:focus {
+  outline: none;
+}
+
+/* PADRÕES */
+
+.font-texto{
+  font-family: Helvetica;
+}
+
+.label_estilo{
+  font-size: 19px;
+  color: #000;
+  padding-top: 2px;
+}
+
+.titulo_pagina{
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+
+}
+
+.titulo_pagina h1{
+  font-size: 50px;
+  text-align: center;
+  color: #000;
+  font-family: Helvetica;
+}
+
+/* caixa central da página */
+.caixa_central_formulario{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+
+}
+
+/* caixa que guarda todo o formulario */
+.caixa_form_fisica{
+  width: 600px;
+  padding-top: 10px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* caixa que guarda os labels e os inputs */
+.campos_form_fisica{
+  width: 55%;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+
+.input_estilo{
+  height: 35px;
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 17px;
+  font-family: Helvetica;
+  color: #000;
+
+}
+
+.input_estilo:focus{
+  border: 1px solid #e57510;
+}
+
+.input_largura_grande{
+  width: 95%;
+}
+
+.input_largura_media{
+  width: 55%;
+}
+
+.input_largura_pequena{
+  width: 15%;
+}
+
+.campos_form_fisica img{
+  width: 150px;
+  height: 150px;
+
+  background-color: rgb(107, 107, 107);
+}
+
+#btnSalvarImagem{
+  width: 115px;
+  height: 30px;
+
+}
+
+#caixa_botao{
+  width: 250px;
+  height: 40px;
+
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: auto;
+}
+
+.botao{
+  width: 250px;
+  height: 45px;
+  font-size: 19px;
+  font-family: Helvetica;
+  background-color:  #2c4b7c;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.botao:hover{
+  background-color: #15233a;
+  color: #fff;
+}
+/*Formulário*/
+.caixa_input{
+  width: 100%;
+  height: 70px;
+
+  margin-bottom: 20px;
+}
+
+
+
+.caixa_inputs_form{
+  height: 70px;
+  margin-left: 9px;
+  float: left;
+}
+
+.caixa_inputs_form_minima{
+  width: 8%;
+}
+
+.caixa_inputs_form_pequena{
+  width: 17%;
+}
+
+.caixa_inputs_form_medio{
+  width: 60%;
+}
+.caixa_inputs_form_2{
+  width: 35%;
+}
+.caixa_inputs_form_3{
+  width: 39%;
+}
+
+.inputs_form{
+  width: 99%;
+}
+
+
+.input_estilo {
+  height: 35px;
+  margin-top: 2px;
+  border:none;
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #15233a;
+  border-bottom: 2px solid #15233a;
+  margin-bottom: 30px;
+  transition: 0.4s;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 1px 1px;
+  border-radius: 1px;
+}
+.input_estilo:hover{
+  border-bottom: 2px solid #15233a;
+}
+
+.label_estilo{
+  font-size: 19px;
+  color: #15233a;
+  padding-top: 2px;
+  font-family: Gadugi;
+}
+
+.slt_estado{
+  margin-top: 4px;
+}
+.formatacao_inputs{
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid #15233a;
+  margin-bottom: 30px;
+  transition: 0.4s;
+  font-size: 17px;
+  color: #828282;
+  background-color: transparent;
+  font-family: Gadugi;
+}
+.borda_inputs{
+  border-radius: 2px;
+}
+.largura_fixa_inputs_3{
+  width: 200px;
+}
+.slt_estado{
+  margin-top: 4px;
+}
+.selectForm{
+  position: absolute;
+  margin-left:390px;
+  margin-top: 14px;
+}
+.imagem_pf{
+  width: 40px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 15px;
+
+  float: left;
+}
+.caixa_inputs_form_4{
+  width: 47.5%;
+}
+.caixa_inputs_form_5{
+  width: 47.5%;
+  margin-left: -55px;
+}
+.botao{
+  border: none;
+  width: 200px;
+  height: 30px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family: Gadugi;
+  font-size: 20px;
+  background-color: #416baf;
+  transition: 0.4s;
+  border-radius: 20px;
+  margin-top: -60px;
+}

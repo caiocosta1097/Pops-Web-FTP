@@ -1,0 +1,968 @@
+@font-face {
+  font-family: caviarDreams;
+  src: url('../font/caviarDreams.ttf');
+}
+
+@font-face {
+  font-family: caviarDreams_bold;
+  src: url('../font/caviarDreams_bold.ttf');
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+.modal{
+  padding: 20px;
+  width: 600px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 530px;
+  border-radius: 5px;
+
+  }
+
+  #icon_fechar{
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+#img_icon_fechar{
+  width: 20px;
+  height: 20px;
+}
+
+.centralizarX{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centralizarY{
+  display: flex;
+  align-items: center;
+}
+
+header, footer{
+  width: 100%;
+  height: 54px;
+  background-color: #15233a;
+}
+
+.titulo{
+  width: 419px;
+  height: 100%;
+  font-size: 15px;
+  color: #fff;
+  font-family:sans-serif;
+  float: left;
+}
+
+.logo{
+  width: 100px;
+  height: 70px;
+  /* float: right;
+  margin-right: 50px; */
+  cursor: pointer;
+}
+
+
+.caixa_logado{
+  height: 100%;
+  float: right;
+}
+
+.fa-user-circle{
+  color: white;
+}
+
+.fa-angle-down{
+  color: white;
+  margin-left: 5px;
+
+}
+
+.logado{
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-right: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.content{
+  width: 100%;
+  height: 883px;
+  background-color: white;
+}
+
+.menu{
+width: 100%;
+height: 100px;
+}
+
+.foto_usuario{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+
+
+}
+
+.caixa_form_fale_conosco{
+  width: 640px;
+  height: 700px;
+  background-color: white;
+
+}
+
+.caixa_form_fisica{
+  width: 640px;
+  height: 800px;
+  background-color: white;
+}
+
+.editar_perfil{
+  margin-top: 15px;
+
+}
+
+.menu_completo{
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+
+.caixa_inicio, #caixa_informacoes{
+  width: 87%;
+  height: 100%;
+  background-color: #EBEFF3;
+  margin-left: auto;
+}
+
+.banner{
+  width: 100%;
+  height: 218px;
+  margin-left: auto;
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
+}
+
+.conteudo_banner{
+  width: 100%;
+  height: 118px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#caixa_banner{
+  width: 100%;
+  height:80px;
+  background-color: #0000006e;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.texto_banner{
+    width: 90%;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 34px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+
+}
+
+.area_informacoes{
+  width: 95%;
+  height: 114px;
+  margin-left: auto;
+  margin-left: 25px;
+  margin-top: 15px;
+
+}
+
+.user_info{
+  width: 360px;
+  height: 95px;
+  background-color: white;
+  float: left;
+  margin-left: 30px;
+}
+
+.user_info span{
+  margin-top: 10px;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 34px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.area_saudacao{
+  margin-top: 50px;
+  width: 50%;
+  height: 280px;
+  float: left;
+}
+
+.area_saudacao{
+  height: 230px;
+}
+
+.foto_perfil{
+
+  width: 200px;
+  height: 200px;
+
+}
+
+.usuario_informacoes, h2{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+h2{
+ text-align: center;
+}
+
+/* LOGIN  */
+
+.cabecalho_login{
+
+width: 100%;
+height: 88px;
+box-shadow: 2px 0 10px #ccc;
+background-color: #15233a;
+}
+
+.logo_login{
+  width: 90px;
+  height: 90px;
+  float: left;
+
+}
+
+.titulo_login{
+  float: left;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.content_login{
+  width: 100%;
+  height: 490px;
+}
+
+.titulo_cadastro{
+  width: 1125px;
+  height: 38px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-family: sans-serif;
+  padding-left: 15px;
+  background-color: #d9e6fc;
+  padding-top: 18px;
+  border-radius: 4px;
+}
+
+.caixa_login, .caixa_form, .caixa_form_componente, .caixa_form_produto{
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+
+}
+
+.caixa_form_componente{
+  width: 875px;
+}
+
+.caixa_form_produto{
+  width: 1140px;
+}
+
+.coluna_form{
+  width: 265px;
+  float: left;
+  margin-left: 20px;
+}
+
+.coluna_form_produto{
+  width: 265px;
+  float: left;
+  margin-left: 20px;
+}
+
+.caixa_login{
+  margin-top: 50px;
+}
+
+
+.caixa_form_enquete{
+  width: 900px;
+  height: 350px;
+  padding: 20px;
+  margin-top: 90px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+
+}
+
+#form_enquete_1{
+  width: 900px;
+  height: 80px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#form_enquete_2{
+  width: 900px;
+  height: 150px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.form_campos{
+  width: 300px;
+  height: 80px;
+  background-color: white;
+  float: left;
+}
+
+.input_opcoes{
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+#txt_enquete{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.txt_opcoes{
+  margin-left: 370px;
+  padding-top: 30px;
+
+}
+
+
+.txt_data{
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 50px;
+
+}
+
+
+.caixa_login h1{
+  text-align: center;
+  margin-top: 0;
+  font-size: 25px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+label{
+  font-family: arial;
+  font-weight: bold;
+}
+
+input, select, option, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+textarea{
+  resize: none;
+}
+
+input[type=submit], input[type=button], input[type=reset]{
+  width: 100%;
+  background-color: #e57510;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  background-color: #ed8425;
+}
+
+/* GEREN. FUNCIONÁRIO */
+
+.opcoes_funcionario{
+  width: 800px;
+  height: 400px;
+}
+
+.caixa_opcao{
+  width: 200px;
+  height: 250px;
+  /* margin-left: 30px; */
+  margin-top: 30px;
+}
+
+.foto_opcoes{
+width: 148px;
+height: 148px;
+}
+
+.foto_opcoes img:hover{
+  transform: scale(1.1);
+}
+
+.title_paginas{
+  width: 800px;
+  height: 100px;
+  font-size: 34px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+
+.titulo_opcao{
+
+  width: 200px;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 15px;
+
+}
+
+/* ADM. SETOR */
+#registros_adm_setor, #registros_adm_historia, #registros_adm_cargor, #registros_enquete, #registros_pops_escolas, #registros_adm_fale_conosco, #registros_eventos, #registros_adm_sustentavel{
+  margin-top: 50px;
+  width: 400px;
+  max-height: 350px;
+  overflow: auto;
+}
+
+#registros_adm_sustentavel{
+  width: 900px;
+}
+
+#registros_enquete, #registros_adm_historia, #registros_pops_escolas, #registros_adm_fale_conosco{
+    width: 700px;
+}
+
+#registros_eventos{
+  width: 800px;
+}
+
+#registros_adm_cargor{
+  width: 450px;
+}
+
+#tabela {
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#tabela td, #tabela thead th {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+
+
+}
+
+#tabela tbody tr:nth-child(even) {
+    background-color: #e57510;
+    color: #fff;
+}
+
+#tabela tr {
+    background-color: #fff;
+
+}
+
+#tabela tr:hover {
+    background-color: #ff8c21;
+    color: #fff;
+}
+
+#tabela thead tr th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #15233a;
+    color: white;
+}
+
+#td_imagens{
+  text-align: center;
+}
+
+#td_imagens img{
+
+  width: 20px;
+  height: 20px;
+
+}
+
+.caixa_filtro{
+  width: 700px;
+  padding: 5px;
+  border-bottom: 3px solid #000;
+  margin-top: 20px;
+}
+
+.caixa_input{
+  width: 370px;
+}
+
+.caixa_filtro .caixa_input input{
+  width: 200px;
+}
+
+.caixa_filtro .caixa_input input[type=submit]{
+  width: 100px;
+}
+
+.content_setor{
+  width: 100%;
+  height: 883px;
+
+}
+
+.area_botao{
+  margin-top: 20px;
+  width: 110px;
+
+}
+
+.area_botao_form{
+  text-align: center;
+}
+
+.area_botao_form input[type=submit], input[type=reset], input[type=button]{
+  width: 120px;
+
+}
+
+.area_botao_form input[type=submit], .area_botao_form #btn_submit{
+  background-color: #28a745;
+  color: white;
+}
+
+.area_botao_form input[type=submit]:hover{
+  background-color: #2ec951;
+}
+
+.area_botao_form input[type=reset]{
+  background-color: #007bff;
+  color: white;
+}
+
+.area_botao_form input[type=reset]:hover{
+  background-color: #1e89fc;
+}
+
+.area_botao_form input[type=button]{
+  background-color: #dc3545 ;
+  color: white;
+}
+
+.area_botao_form input[type=button]:hover{
+  background-color: #d8525f;
+}
+
+.modal-escola{
+  width: 600px;
+  height: 530px;
+  display: block;
+  position: relative;
+  background: white;
+}
+
+.modal-comentario{
+  width: 400px;
+  height: 520px;
+  display: block;
+  position: relative;
+  background: white;
+}
+
+.modal-anuncio{
+  width: 530px;
+  height: 500px;
+  display: block;
+  position: relative;
+  background: white;
+}
+
+.modal-pessoa-juridica{
+  width: 700px;
+  height: 550px;
+  display: block;
+  position: relative;
+  background: white;
+}
+
+.divisa-anuncio{
+  width: 45%;
+  float: left;
+  margin: 5px;
+}
+
+.descarregar_imagem{
+  width: 250px;
+  height: 220px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+}
+
+.modal-conteudo-fale-conosco{
+  padding: 10px;
+}
+
+.head-comentario {
+  width: 85%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+.head-fale-conosco{
+  width: 90.7%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+
+}
+.head-anuncio{
+  width: 89%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.head-escola{
+  width: 90%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.head-pessoa-juridica{
+  width: 91.5%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.icones_status{
+  width: 250px;
+  height: 100px;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+
+.icones_status_anuncio{
+  width: 250px;
+  height: 90px;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+
+.head-comentario span{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head-fale-conosco span{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head-escola span{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head-anuncio span{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head-pessoa-juridica span{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+
+.form_escola1{
+  width: 95%;
+  height: 300px;
+  background-color: white;
+  margin-top: 15px;
+
+}
+
+.form_comentario{
+  width: 95%;
+  height: 300px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.form_informacoes{
+  width: 95%;
+  height: 300px;
+  background-color: white;
+  margin-top: 15px;
+
+}
+
+.form_divisa_info{
+  width: 47%;
+  min-height: 420px;
+  height: auto;
+  background-color: white;
+  float: left;
+  margin-left: 10px;
+
+}
+
+
+.divisao_escola{
+  width: 47%;
+  height: 270px;
+  background-color: white;
+  float: left;
+  margin-left: 10px;
+
+}
+
+.divisa-modal{
+  width: 100%;
+  height: 174px;
+}
+
+.divisa-modal-contatos{
+  width: 100%;
+  height: 50px;
+}
+
+.divisa-modal-endereco{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.metade{
+  width: 48%;
+  float: left;
+  margin-left: 5px;
+}
+
+.endereco-n{
+  width: 60px;
+  height: 70px;
+  float: left;
+}
+
+.endereco{
+  width: 230px;
+  background-color: white;
+  margin-left: auto;
+}
+
+
+
+.final_form{
+  width: 95%;
+  height: 30px;
+  background-color: white;
+}
+
+.final_form textarea{
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10px;
+
+}
+
+.caixa_form_funcionario{
+  width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+}
+
+.caixa_form_eventos{
+  width: 700px;
+  min-height: 320px;
+  height: auto;
+  padding: 20px;
+  margin-top: 90px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+}
+
+.lblEventos{
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+.inputEventos{
+  width: 98%;
+  height: 40px;
+}
+
+.caixa_inputs_evento{
+  width: 49%;
+  float: left;
+  margin-left: 7px;
+}
+
+.titulo_e_localidade{
+  height: 100px;
+}
+
+.descricao_data_e_status{
+  height: 150px;
+}
+
+.caixa_inputs_evento textarea{
+  width: 97%;
+  height: 118px;
+  margin-top: 8px;
+  resize: none;
+  border: 1px solid #ccc;
+}
+
+.largura_data{
+  width: 40%;
+}
+
+.font-input{
+  font-size: Arial;
+  font-size: 17px;
+}
+
+.img_size{
+  width: 100px;
+  height: 100px;
+}
+
+#registros_adm_sustentavel #tabela #descricao{
+  max-width: 600px;
+  text-align: justify;
+}
+
+#registros_adm_sustentavel #tabela #imagem{
+  text-align: center;
+}
+
+#registros_adm_sustentavel #tabela #imagem img{
+  width: 150px;
+  height: 100px;
+}
+
+#txt_descricao_produto{
+  height: 118px;
+}
+
+#label_opcoes{
+  width: 100%;
+  font-weight: bold;
+  font-family: arial;
+  text-align: center;
+}
+
+.color_sample{
+  width: 28px;
+  height: 28px;
+  border-radius: 15px;
+}
