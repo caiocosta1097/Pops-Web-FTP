@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>Index</title>
+  <title>Pop'Soda Drink</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/murilo.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" href="img/logos.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/arielle.css">
   <link rel="stylesheet" href="css/loading.css">
   <link rel="stylesheet" href="css/effects.css" type="text/css">
@@ -107,13 +108,13 @@
         <h1 class="titulo_sections">Produtos em destaque</h1>
         <div class="section-six-conteudo centralizar_elemento">
 
-          <?php
-            $sql = "SELECT * FROM tbl_produto WHERE status_home = 1 ORDER BY RAND() LIMIT 4";
-            $stm = $con->prepare($sql);
-            $success = $stm->execute();
-            foreach ($stm->fetchAll(PDO::FETCH_ASSOC) as $result){
-        	?>
             <div id="box_products" class="section-six-div-products fadeInTop">
+            <?php
+              $sql = "SELECT * FROM tbl_produto WHERE status_home = 1 ORDER BY RAND() LIMIT 4";
+              $stm = $con->prepare($sql);
+              $success = $stm->execute();
+              foreach ($stm->fetchAll(PDO::FETCH_ASSOC) as $result){
+        	  ?>
               <div class="section-six-products">
                 <div class="section-six-image-products centralizar_elemento">
 
@@ -187,9 +188,9 @@
               $success = $stm->execute();
               foreach ($stm->fetchAll(PDO::FETCH_ASSOC) as $result){
             ?>
-              <div class="section-three-conteudo-titulo"><?php echo (utf8_decode($result['titulo'])) ?></div>
+              <div class="section-three-conteudo-titulo"><?php echo ($result['titulo']) ?></div>
               <div class="section-three-conteudo-texto">
-                <?php echo (utf8_decode($result['descricao'])) ?>
+                <?php echo ($result['descricao']) ?>
                 <?php 
                   if(@$_COOKIE['id_p_fisica'] && $result['precisa_cadastro'] == 1){
                     echo "<input type='button' onclick='teste()' class='btn_votar btnParticipar' value='Participe'></a><br>"; 
@@ -243,7 +244,9 @@
 
             <?php } ?>
           <div class="caixa_noticia-botao">
-              <a href="noticias.php">Mais notícias</a>
+              <a href="noticias.php">
+                  <button >Mais notícias</button>
+              </a>
           </div>
 
           <form action="index.php" name="frmEmail" id="frmEmail" method="POST">
