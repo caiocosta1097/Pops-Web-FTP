@@ -1,6 +1,6 @@
 
 //-------FAZ O LOGIN NO DASHBOARD DA PESSOA JURIDICA ------------
-var host = window.location.host + "/web";
+var host = window.location.host + "/Tcc";
 $("#btnlogar").click(function(){
 
 
@@ -16,14 +16,14 @@ $("#btnlogar").click(function(){
 
 function logout(){
     document.cookie = "cnpj="+null;
-    var url = `http://${host}/index.php`;
+    var url = `http://${host}/pops/index.php`;
     $(location).attr('href',url);
 }
 
 function loginPF(){
   $.ajax({
     type: "POST",
-    url: `http://${host}/backend/services/PFService.php/?op=login`,
+    url: `http://${host}/pops/backend/services/PFService.php/?op=login`,
     dataType: "json",
     data: {"cpf": $("#txtcpf").val(), "senha": $("#txtpassword").val()},
     success: function(data){
@@ -32,7 +32,7 @@ function loginPF(){
         var html = '';
         if(data.success == true){
             //redireciona a url p/ dashboard da pj
-            var url = `http://${host}/index.php`;
+            var url = `http://${host}/pops/index.php`;
 
             //criando um cookie no js
             document.cookie = "id_p_fisica="+data.id_p_fisica;
@@ -48,7 +48,7 @@ function loginPF(){
 function loginPJ(){
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=login`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=login`,
         dataType: "json",
         data: {"cnpj": $("#txtcnpj").val(), "senha": $("#txtpassword").val()},
         success: function(data){
@@ -57,7 +57,7 @@ function loginPJ(){
             var html = '';
             if(data.success == true){
                 //redireciona a url p/ dashboard da pj
-                var url = `http://${host}/index.php`;
+                var url = `http://${host}/pops/index.php`;
 
                 //criando um cookie no js
                 document.cookie = "cnpj="+data.cnpj;
@@ -79,7 +79,7 @@ $("#form-comentario").submit(function(evt){
     var idPessoaFisicaCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PFService.php/?op=addComentario`,
+        url: `http://${host}/pops/backend/services/PFService.php/?op=addComentario`,
         data: new FormData($("#form-comentario")[0]),
         cache: false,
         contentType: false,
@@ -102,7 +102,7 @@ function getAllData(){
     var idPessoaFisicaCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PFService.php/?op=dashboard`,
+        url: `http://${host}/pops/backend/services/PFService.php/?op=dashboard`,
         dataType: "json",
         data: {"id_p_fisica":idPessoaFisicaCookie},
         success: function(data){
@@ -120,11 +120,38 @@ function getAllData(){
     });
 }
 
+function getComprasData(){
+   
+    $.ajax({
+      type: "POST",
+      url: `http://${host}/pops/backend/services/CompraService.php/?op=pedidos`,
+      dataType: "json",
+      success: function(data){
+        var html = '';
+        
+        for(var i = 0; i < data.length; i++){
+          
+          html+= `<div class="caixa_titulo_mp">`;
+          html+= ` <div class="titulos_mp elemento_esquerda ont-titulos_res">
+                      <p class="">${data[i].id_pedido}</p>
+                   </div>`;
+          html+= ` <div class="titulos_mp elemento_esquerda ont-titulos_res">
+                      <p>${data[i].valor_total}</p>
+                    </div>`;
+          html+= `<div class="titulos_mp elemento_esquerda ont-titulos_res">
+                    <p>${data[i].status_pedido}</p>
+                      </div></div>`;
+      }
+      $("#container-compras").append(html);
+      }
+  });
+}
+
 function getNome(){
   var idPessoaFisicaCookie = document.cookie;
   $.ajax({
       type: "POST",
-      url: `http://${host}/backend/services/PFService.php/?op=dashboard`,
+      url: `http://${host}/pops/backend/services/PFService.php/?op=dashboard`,
       dataType: "json",
       data: {"id_p_fisica":idPessoaFisicaCookie},
       success: function(data){
@@ -139,7 +166,7 @@ $("#form-perfil").submit(function(evt){
     var cnpjCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=addProfile`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=addProfile`,
         data: new FormData($("#form-perfil")[0]),
         cache: false,
         contentType: false,
@@ -168,7 +195,7 @@ $("#form-anuncio").submit(function(evt){
     if(btnValue!="Editar"){
     $.ajax({
             type: "POST",
-            url: `http://${host}/backend/services/PJService.php/?op=addAnuncio`,
+            url: `http://${host}/pops/backend/services/PJService.php/?op=addAnuncio`,
             data: new FormData($("#form-anuncio")[0]),
             cache: false,
             contentType: false,
@@ -195,7 +222,7 @@ function getAllDataPJ(){
     var cnpjCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=dashboard`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=dashboard`,
         dataType: "json",
         data: {"cnpj":cnpjCookie},
         success: function(data){
@@ -229,7 +256,7 @@ function getResponsavel(){
   var cnpjCookie = document.cookie;
   $.ajax({
       type: "POST",
-      url: `http://${host}/backend/services/PJService.php/?op=dashboard`,
+      url: `http://${host}/pops/backend/services/PJService.php/?op=dashboard`,
       dataType: "json",
       data: {"cnpj":cnpjCookie},
       success: function(data){
@@ -244,7 +271,7 @@ function getPerfilData(){
     var cnpjCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=perfis`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=perfis`,
         dataType: "json",
         data: {"cnpj":cnpjCookie},
         success: function(data){
@@ -270,7 +297,7 @@ function getAdData(){
     var cnpjCookie = document.cookie;
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=ads`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=ads`,
         dataType: 'json',
         data: {"cnpj":cnpjCookie},
         success: function(data){
@@ -315,7 +342,7 @@ function callModalWithData(obj){
 
                 $.ajax({
                     type: "POST",
-                    url: `http://${host}/backend/services/PJService.php/?op=updateAnuncio`,
+                    url: `http://${host}/pops/backend/services/PJService.php/?op=updateAnuncio`,
                     data: new FormData($("#form-anuncio")[0]),
                     cache: false,
                     contentType: false,
@@ -359,7 +386,7 @@ function callModalWithData(obj){
 
                 $.ajax({
                     type: "POST",
-                    url: `http://${host}/backend/services/PJService.php/?op=updatePerfil`,
+                    url: `http://${host}/pops/backend/services/PJService.php/?op=updatePerfil`,
                     data: new FormData($("#form-perfil")[0]),
                     cache: false,
                     contentType: false,
@@ -386,7 +413,7 @@ function callModalWithData(obj){
   function selectById(id){
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=ad_by_id`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=ad_by_id`,
         dataType: 'json',
         data: {"idAd":id},
         success: function(data){
@@ -407,7 +434,7 @@ function callModalWithData(obj){
   function selectPerfilById(id){
     $.ajax({
         type: "POST",
-        url: `http://${host}/backend/services/PJService.php/?op=perfil_by_id`,
+        url: `http://${host}/pops/backend/services/PJService.php/?op=perfil_by_id`,
         dataType: 'json',
         data: {"idPerfil":id},
         success: function(data){
@@ -432,7 +459,7 @@ function callModalWithData(obj){
     event.preventDefault();
     $.ajax({
       type: 'POST',
-      url: `http://${host}/backend/services/PFService.php/?acao=mais`,
+      url: `http://${host}/pops/backend/services/PFService.php/?acao=mais`,
       data: {id:id},
       success: function(dados){
         window.location.href = "carrinho.php";
@@ -445,7 +472,7 @@ function callModalWithData(obj){
       // alert(host);
       $.ajax({
         type: 'POST',
-        url: `http://${host}/backend/services/PFService.php/?acao=mais`,
+        url: `http://${host}/pops/backend/services/PFService.php/?acao=mais`,
         data: {id:id},
         success: function(dados){
           console.log(dados);
@@ -455,7 +482,7 @@ function callModalWithData(obj){
 
       $.ajax({
         type: 'POST',
-        url: `http://${host}/backend/services/PFService.php/?acao=menos`,
+        url: `http://${host}/pops/backend/services/PFService.php/?acao=menos`,
         data: {id:id},
         success: function(dados){
           console.log(dados);
@@ -468,7 +495,7 @@ function callModalWithData(obj){
     event.preventDefault();
     $.ajax({
       type: 'POST',
-      url: `http://${host}/backend/services/PJService.php/?acao=mais`,
+      url: `http://${host}/pops/backend/services/PJService.php/?acao=mais`,
       data: {id:id},
       success: function(dados){
         window.location.href = "carrinhoPJ.php";
@@ -481,7 +508,7 @@ function callModalWithData(obj){
     // alert(host);
     $.ajax({
       type: 'POST',
-      url: `http://${host}/backend/services/PJService.php/?acao=mais`,
+      url: `http://${host}/pops/backend/services/PJService.php/?acao=mais`,
       data: {id:id},
       success: function(dados){
         console.log(dados);
@@ -491,7 +518,7 @@ function callModalWithData(obj){
 
     $.ajax({
       type: 'POST',
-      url: `http://${host}/backend/services/PJService.php/?acao=menos`,
+      url: `http://${host}/pops/backend/services/PJService.php/?acao=menos`,
       data: {id:id},
       success: function(dados){
         console.log(dados);
@@ -506,7 +533,7 @@ function callModalWithData(obj){
         evt.preventDefault();
         $.ajax({
             type: "POST",
-            url: `http://${host}/backend/services/PEService.php/?op=addEscola`,
+            url: `http://${host}/pops/backend/services/PEService.php/?op=addEscola`,
             data: new FormData($("#frmPopsEscola")[0]),
             cache: false,
             contentType: false,
@@ -530,7 +557,7 @@ function callModalWithData(obj){
        
         $.ajax({
           type: "POST",
-          url: `http://${host}/backend/services/EnqueteService.php/?op=answer`,
+          url: `http://${host}/pops/backend/services/EnqueteService.php/?op=answer`,
           dataType:"json",
           data:{"id_resposta":radioValue, "id_enq":_id_enq},
           success: function(data){
@@ -543,4 +570,8 @@ function callModalWithData(obj){
           }
       });
     };
+
+
+
+    
 
