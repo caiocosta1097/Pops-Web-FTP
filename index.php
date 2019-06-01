@@ -191,7 +191,9 @@
               <div class="section-three-conteudo-titulo"><?php echo ($result['titulo']) ?></div>
               <div class="section-three-conteudo-texto">
                 <?php echo ($result['descricao']) ?>
-                <?php 
+              </div>
+              
+              <?php 
                   if(@$_COOKIE['id_p_fisica'] && $result['precisa_cadastro'] == 1){
                     echo "<input type='button' onclick='teste()' class='btn_votar btnParticipar' value='Participe'></a><br>"; 
                   }else if(@$_COOKIE['id_p_fisica'] == null && $result['precisa_cadastro'] == 1 ){
@@ -199,9 +201,6 @@
                     <br></a>";
                   }  
                 ?>
-              </div>
-              
-              
               
           </div>
           <div class="section-three-conteudo-imagem centralizarY">
