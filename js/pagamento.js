@@ -128,7 +128,7 @@ $(document).ready(function() {
                  //conexão com banco de dados da pops
                 $.ajax({
                     type: "POST",
-                    url: `http://${host}/pops/backend/services/CompraService.php/?op=buy`,
+                    url: `http://${host}/backend/services/CompraService.php/?op=buy`,
                     //dataType:"json", -> POR ENQUANTOOOOOOO
                     data:{
                     
