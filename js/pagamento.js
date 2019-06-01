@@ -129,7 +129,7 @@ $(document).ready(function() {
                 $.ajax({
                     type: "POST",
                     url: `http://${host}/backend/services/CompraService.php/?op=buy`,
-                    //dataType:"json", -> POR ENQUANTOOOOOOO
+                    
                     data:{
                     
                     'nome':name,

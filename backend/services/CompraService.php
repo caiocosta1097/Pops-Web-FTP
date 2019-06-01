@@ -1,7 +1,7 @@
 <?php
     @session_start();
-    $path_url = "http://".$_SERVER['HTTP_HOST'];
-    $path_local = $_SERVER['DOCUMENT_ROOT'];
+    $path_url = "http://".$_SERVER['HTTP_HOST']."/web";
+    $path_local = $_SERVER['DOCUMENT_ROOT']."/web";
 
     $buyBusiness = "";
     require_once "../business/CompraBusiness.php";
