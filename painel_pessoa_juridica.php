@@ -84,7 +84,7 @@
                     </div>
                     <!-- Razão Social -->
                     <p class="centralizar_texto font-titulo font-negrito identidade_pj_font" id='razao_social'></p>
-                    <img src="cms/view/img/editar.png"  title="icon" class="iconEditarFis" onclick="editar(<?php echo $_COOKIE['cnpj']; ?>)">
+                    <img src="../cms/view/img/editar.png"  title="icon" class="iconEditarFis" onclick="editar(<?php echo $_COOKIE['cnpj']; ?>)">
                     <p class="centralizar_texto font-texto" id='responsavel'></p>
 
                 </div>
@@ -181,21 +181,8 @@
                         </div>
                     </div>
 
-                    <!-- Caixa resultado -->
-                    <div class="caixa_titulo_mp">
-                        <!-- Número do pedido -->
-                        <div class="titulos_mp elemento_esquerda ont-titulos_res">
-                            <p class="">Número do Pedido</p>
-                        </div>
-                        <!-- Número do pedido -->
-                        <div class="titulos_mp elemento_esquerda ont-titulos_res">
-                            <p>Total</p>
-                        </div>
-                        <!-- Número do pedido -->
-                        <div class="titulos_mp elemento_esquerda ont-titulos_res">
-                            <p>Status</p>
-                        </div>
-                    </div>
+                    
+                   <div id="container-compras"></div>
 
                 </div>
 
@@ -215,6 +202,9 @@
                   //SELECIONAR DADOS DE ANÚNCIOS
                   getAdData();
 
+                  //TRAZER DADOS DE COMPRAS
+                  getComprasData();
+
                   //CHAMAR MODAL
                   $('#Anuncio').click(function(){
                     callModal('modal-anuncio.php');
@@ -228,9 +218,6 @@
                     $('#container').fadeIn(600);
 
                  });
-
-
-
 
                   //CHAMAR MODAL
                   $('#btnNovoAcesso').click(function(){

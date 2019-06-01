@@ -11,6 +11,7 @@ $(document).ready(function() {
         var num = sessionStorage.getItem("num");
         var itens = JSON.parse(sessionStorage.getItem("itemList"));
         var customer = JSON.parse(sessionStorage.getItem("customer"));
+        var total = sessionStorage.getItem("total");
 
         //get form values
         var holder = $("#txtNome").val();
@@ -45,6 +46,9 @@ $(document).ready(function() {
 
         console.log(delivery_date);
         console.log(customer.logradouro);
+
+       
+        
         
         // pega os erros de validação nos campos do form e a bandeira do cartão
         var cardValidations = pagarme.validate({card: card})
@@ -61,7 +65,7 @@ $(document).ready(function() {
         //Script para realizar a transação
           pagarme.client.connect({ api_key: 'ak_test_nlWrn8okbIUe8n7UfLUXvq4I0mcH0A' })
             .then(client => client.transactions.create({
-                "amount": 21000,
+                "amount": total,
                 "card_number": card.card_number,
                 "card_cvv":  card.card_cvv,
                 "card_expiration_date": card.card_expiration_date,
@@ -119,6 +123,34 @@ $(document).ready(function() {
                     icon:"success",
                     className: "swal2-popup"})
                 .then((value) => {window.location.href = "index.php"});
+
+
+                 //conexão com banco de dados da pops
+                $.ajax({
+                    type: "POST",
+                    url: `http://${host}/pops/backend/services/CompraService.php/?op=buy`,
+                    //dataType:"json", -> POR ENQUANTOOOOOOO
+                    data:{
+                    
+                    'nome':name,
+                    'valor_total':total,
+                    'peso_total':10,
+                    'volume_total':10,
+                    'status':1,
+                    'status_pedido':'Pagamento Confirmado',
+                    'logradouro':customer.logradouro,
+                    'bairro':customer.bairro,
+                    'cidade':cidade,
+                    'uf':customer.uf,
+                    'dt_compra': '2019-06-01'
+                    },
+                    success: function(data){
+                        console.log(data);
+                    },
+                    error: function(){
+                        alert('deu erro');
+                    }
+                });    
                
             } else {
                 swal("Essa não! Sua compra não poder ser efetuada. Por favor, verifique os dados inseridos", {icon:"error"});

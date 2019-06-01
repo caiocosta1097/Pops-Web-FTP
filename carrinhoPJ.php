@@ -86,6 +86,7 @@
                           quantity: ".$bebidas['quantidade'].",
                           tangible: true
                        }
+                       
                        itemList.push(itens);
                        
                    </script>");
@@ -138,6 +139,7 @@
                 echo("<script>
                       console.log(JSON.stringify(itemList));
                       sessionStorage.setItem('itemList', JSON.stringify(itemList));
+                     
                   </script>");
             ?>
           </div>
@@ -152,6 +154,14 @@
                     <input type="button" value="Continuar" id="btnContinuar" name="btnContinuar">
                 </a>
               </div>
+              <?php
+                
+                echo("<script>
+                      var total = ".($_SESSION['totalCarrinhoPJ']*100).";
+                      console.log(total);
+                      sessionStorage.setItem('total',total);
+                    </script>");
+            ?>
         </div>
         <footer><?php require_once 'footer.html'; ?></footer>
     </body>
