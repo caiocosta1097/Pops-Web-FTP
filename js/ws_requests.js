@@ -107,7 +107,6 @@ function getAllData(){
         data: {"id_p_fisica":idPessoaFisicaCookie},
         success: function(data){
             sessionStorage.setItem("customer", JSON.stringify(data));
-            $('#foto').attr('src', data.foto);
             $('#nome').html(data.nome);
             $('#cpf').html(data.cpf);
             $('#celular').html(data.celular);
@@ -132,13 +131,13 @@ function getComprasData(){
         for(var i = 0; i < data.length; i++){
           
           html+= `<div class="caixa_titulo_mp">`;
-          html+= ` <div class="titulos_mp elemento_esquerda ont-titulos_res">
-                      <p class="">${data[i].id_pedido}</p>
+          html+= ` <div class="tabela_compra elemento_esquerda ont-titulos_res">
+                      <p class="">${data[i].dt_compra}</p>
                    </div>`;
-          html+= ` <div class="titulos_mp elemento_esquerda ont-titulos_res">
-                      <p>${data[i].valor_total}</p>
+          html+= ` <div class="tabela_compra elemento_esquerda ont-titulos_res">
+                      <p>R$ ${data[i].valor_total}</p>
                     </div>`;
-          html+= `<div class="titulos_mp elemento_esquerda ont-titulos_res">
+          html+= `<div class="tabela_compra elemento_esquerda ont-titulos_res">
                     <p>${data[i].status_pedido}</p>
                       </div></div>`;
       }
@@ -227,7 +226,6 @@ function getAllDataPJ(){
         data: {"cnpj":cnpjCookie},
         success: function(data){
             sessionStorage.setItem("customer", JSON.stringify(data));
-            $('#foto').attr('src', data.foto);
             $('#nom_fantasia').html(data.nome_fantasia);
             $('#razao_social').html(data.razao_social);
             $('#responsavel').html(data.responsavel);
@@ -279,7 +277,7 @@ function getPerfilData(){
             //looping em todos os dados retorados via JSON
             for(var i = 0; i < data.length; i++){
                 html+= `<a class="click_me" href="#" data-id="${data[i].id_perfil_juridico}" onclick="callModalPerfilWithData(this);$('#container').fadeIn(600);"><div class="card_anuncio">`;
-                html+= `<div class="card_img_anuncio"><img class="img_anuncio" src='http://${host}/cms/view/img/temp/${data[i].foto}'  alt="ads" title="ads"></img></div>`;
+                html+= `<div class="card_img_anuncio"><img class="img_anuncio" src='http://${host}/cms/view/img/usuario.png'  alt="ads" title="ads"></img></div>`;
                 html+= `<div class="options">Responsável</div>`;
                 html+= `<div class="desc_anuncio">${data[i].responsavel}</div>`;
                 html+= `</div></a>`;
