@@ -80,11 +80,11 @@
                 <!-- Caixa identidade -->
                 <div class="caixa_identidade_pj centralizar_caixa">
                     <div class="caixa_imagem_pj centralizar_caixa">
-                        <img src="" id='foto' width="200" height="200" alt="Imagem nao encontrada" title="ola">
+                        <img src="cms/view/img/usuario.png" id='foto' width="200" height="200" alt="Imagem nao encontrada" title="ola">
                     </div>
                     <!-- Razão Social -->
                     <p class="centralizar_texto font-titulo font-negrito identidade_pj_font" id='razao_social'></p>
-                    <img src="../cms/view/img/editar.png"  title="icon" class="iconEditarFis" onclick="editar(<?php echo $_COOKIE['cnpj']; ?>)">
+                    <img src="cms/view/img/editar.png"  title="icon" class="iconEditarFis" onclick="editar(<?php echo $_COOKIE['cnpj']; ?>)">
                     <p class="centralizar_texto font-texto" id='responsavel'></p>
 
                 </div>
@@ -169,7 +169,7 @@
                     <div class="caixa_titulo_mp">
                         <!-- Número do pedido -->
                         <div class="titulos_mp elemento_esquerda font-negrito font-titulo">
-                            <p>Número do Pedido</p>
+                            <p>Data do Pedido</p>
                         </div>
                         <!-- Número do pedido -->
                         <div class="titulos_mp elemento_esquerda font-negrito font-titulo">

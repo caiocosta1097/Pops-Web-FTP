@@ -83,6 +83,7 @@
                 $result[$cont] = array(
                         'success' => true,
                         'id_pedido' => $rsCompra['id_c_produto'],
+                        'dt_compra' => $rsCompra['dt_compra'],
                         'valor_total' => $rsCompra['valor_total'],
                         'status_pedido' => $rsCompra['status_pedido']);
                 $cont+=1;

@@ -1,11 +1,13 @@
 <?php
     @session_start();
-    $path_url = "http://".$_SERVER['HTTP_HOST'];
-    $path_local = $_SERVER['DOCUMENT_ROOT'];
+    $path_url = "http://".$_SERVER['HTTP_HOST']."/web";
+    $path_local = $_SERVER['DOCUMENT_ROOT']."/web";
 
     $buyBusiness = "";
     require_once "../business/CompraBusiness.php";
     $buyBusiness = new CompraBusiness();
+
+    date_default_timezone_set('Brazil/East');
    
 
     if(isset($_GET['op'])){
@@ -21,7 +23,7 @@
             $bairro = $_POST['bairro'];
             $cidade = $_POST['cidade'];
             $uf = $_POST['uf'];
-            $dt_compra = $_POST['dt_compra'];
+            $dt_compra = date('Y-m-d');
             //callback
             echo json_encode($buyBusiness->addNewCompra(
                 $cnpj,

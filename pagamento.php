@@ -13,7 +13,6 @@
         <script src="js/jquery.js"></script>
        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-        </script>
         
         <!-- CHAMANDO O ARQUIVO DE EVENTOS EM JQUERY -->
         <script src="js/event.js">
