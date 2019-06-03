@@ -1,1088 +1,2216 @@
-body{
-  margin: 0px;
-  padding: 0px;
-}
+@media screen and (min-width:1000px){
 
-#container{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  position: fixed;
-  z-index: 999;
-  display: none;
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
 
+  #container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
 
-}
-
-.Abrirmodal{
-  padding: 20px;
-  width: 600px;
-  height: auto;
-  margin-top: 30px;
-  margin-left: 530px;
-  border-radius: 5px;
 
   }
 
-#msg_login{
-  width: 280px;
-  height: 20px;
-  padding-top: 5px;
-  color: #fff;
-  font-family: Gadugi;
-  text-align: center;
-  background-color: #f00;
-  display: none;
-}
+  .Abrirmodal{
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 530px;
+    border-radius: 5px;
+
+    }
+
+  #msg_login{
+    width: 280px;
+    height: 20px;
+    padding-top: 5px;
+    color: #fff;
+    font-family: Gadugi;
+    text-align: center;
+    background-color: #f00;
+    display: none;
+  }
 
 
 
 
-.cadastar{
+  .cadastar{
+      width: 100%;
+      background-color: #EA720F;
+      border-color: #EA720F;
+      border-width: 0;
+      color: #FFFFFF;
+      display: block;
+      margin: 0 auto;
+      padding: 15px 50px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      cursor: pointer;
+
+  }
+
+  /* Modal de login */
+
+  .modal-principal-login{
+    width: 500px;
+    height: 430px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .modal-body-login{
+    width: 450px;
+    height:310px;
+    background-color: white;
+
+  }
+
+  .modal-icones{
+    width: 380px;
+    height: 300px;
+    transform: translateY(10%);
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .icone-escolha-login{
+    width: 180px;
+    height: 160px;
+    background-color:white;
+    float: left;
+    transform: translateY(20%);
+    margin-left: 10px;
+    cursor: pointer;
+
+  }
+
+  .icone-escolha-login:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .icone-escolha-login img{
+    width: 180px;
+    height: 160px;
+  }
+  /* Modal de autenticacao */
+
+  .modal-login{
+    width: 330px;
+    height: 430px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+  }
+
+  .modal-header-login{
+    width:90%;
+    height: 35px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  h4.modal-title-login{
     width: 100%;
+    height: 28px;
+    font-family: Helvetica;
+    padding-top: 25px;
+    font-size: 19px;
+
+  }
+
+  p.modal-title-campos-login{
+    font-family: Helvetica;
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  a.modal-fechar{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    float: right;
+    margin-left: -10px;
+    background-image: url("../img/icon_close.png");
+    background-size: 20px 20px;
+    cursor: pointer;
+  }
+
+  .modal-body-login{
+    width: 328px;
+    height:360px;
+    background-color: white;
+  }
+
+  .modal-box-icone-login{
+    width: 288px;
+    height: 275px;
+    background-color: white;
+  }
+
+  .icone-login{
+    width: 130px;
+    height: 90px;
+    background-image: url("../img/icon_logo.png");
+    background-size: 130px 90px;
+    transform: translateX(75%);
+  }
+
+
+  .modal-form-login{
+    width: 288px;
+    height: 190px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-login input{
+    width: 288px;
+    height: 46px;
+    padding: 0.2em;
+    display: block;
+    border:none;
+  }
+
+
+  .form-login input[type="button"]{
+      width: 288px;
     background-color: #EA720F;
-     border-color: #EA720F;
-     border-width: 0;
-     color: #FFFFFF;
-     display: block;
-     margin: 0 auto;
-     padding: 15px 50px;
-     text-transform: uppercase;
-     margin-top: 5px;
-     cursor: pointer;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  .form-login input[type="button"]:hover{
+    background-color: #c4610f;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 
-}
-
-/* Modal de login */
-
-.modal-principal-login{
-  width: 500px;
-  height: 430px;
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-}
-
-.modal-body-login{
-  width: 450px;
-  height:310px;
-  background-color: white;
-
-}
-
-.modal-icones{
-  width: 380px;
-  height: 300px;
-  transform: translateY(10%);
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.icone-escolha-login{
-  width: 180px;
-  height: 160px;
-  background-color:white;
-  float: left;
-  transform: translateY(20%);
-  margin-left: 10px;
-  cursor: pointer;
-
-}
-
-.icone-escolha-login:hover{
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.icone-escolha-login img{
-  width: 180px;
-  height: 160px;
-}
-/* Modal de autenticacao */
-
-.modal-login{
-  width: 330px;
-  height: 430px;
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-
-}
-
-.modal-header-login{
-  width:90%;
-  height: 35px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-h4.modal-title-login{
-  width: 100%;
-  height: 28px;
-  font-family: Helvetica;
-  padding-top: 25px;
-  font-size: 19px;
-
-}
-
-p.modal-title-campos-login{
-  font-family: Helvetica;
-  float: left;
-  margin-bottom: 15px;
-}
-
-a.modal-fechar{
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  float: right;
-  margin-left: -10px;
-  background-image: url("../img/icon_close.png");
-  background-size: 20px 20px;
-  cursor: pointer;
-}
-
-.modal-body-login{
-  width: 328px;
-  height:360px;
-  background-color: white;
-}
-
-.modal-box-icone-login{
-  width: 288px;
-  height: 275px;
-  background-color: white;
-}
-
-.icone-login{
-  width: 130px;
-  height: 90px;
-  background-image: url("../img/icon_logo.png");
-  background-size: 130px 90px;
-  transform: translateX(75%);
-}
-
-
-.modal-form-login{
-  width: 288px;
-  height: 190px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-login input{
-  width: 288px;
-  height: 46px;
-  padding: 0.2em;
-  display: block;
-  border:none;
-}
-
-
-.form-login input[type="button"]{
+  .modal-footer-login{
     width: 288px;
-  background-color: #EA720F;
-   color: #FFFFFF;
-   display: block;
-   margin: 0 auto;
-   padding: 15px 50px;
-   text-transform: uppercase;
-   margin-top: 5px;
-   border-radius: 4px;
-}
-.form-login input[type="button"]:hover{
-  background-color: #c4610f;
-   color: #FFFFFF;
-   cursor: pointer;
-}
-
-.modal-footer-login{
-  width: 288px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: Gadugi;
-
-}
-
-/* Pagina de cadastro */
-
-
-.principal-cadastro{
-  width:700px;
-  height: 200px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
-.principal-cadastro-juridico{
-  width:600px;
-  height: 500px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.escolha-cadastro{
-  width: 350px;
-  height:120px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-}
-
-.escolha-cadastro-header{
-  width: 100%;
-  height: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: Helvetica;
-  font-weight: lighter;
-  margin-bottom: 5px;
-}
-
-.escolha-cadastro-body{
-  width: 700px;
-  height: 200px;
-  margin-left: -170px;
-}
-
-.icone-escolha-cadastro{
-  width: 50px;
-  height: 50px;
-  background-color: white;
-
-}
-
-.icone-escolha-cadastro img{
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: yellow;
-}
-
-.icone-escolha-cadastro span{
-  width: 130px;
-  height: 30px;
-  font-size: 18px;
-  color: #000;
-  font-family: Helvetica;
-  margin-left: 5px;
-}
-
-.cadastro-header-title{
-  width: 100%;
-  height:50px;
-}
-
-.cadastro-header-title h5{
-  color: #000;
-  font-family: Helvetica;
-  font-size: 30px;
-  text-align: center;
-
-}
-
-/*  Pagna de prodtos */
-
-.principal{
-  width: 1200px;
-  min-height: 500px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-
-}
-
-.menu_filtos-produtos{
-  width: 210px;
-  min-height: 400px;
-  height: auto;
-  background-color: white;
-  float: left;
-  border: 1px solid #cccdd5;
-  margin:10px 10px;
-  border-radius: 4px
-
-}
-
-
-.menu_filtos-produtos h3{
-  height: 30px;
-  background-color: white;
-  color: #15233a;
-  margin-top: 20px;
-  margin-left: 30px;
-  /* transform: translateX(35%); */
-  font-family: Helvetica;
-  font-size: 15px;
-
-}
-
-
-.menu_filtos-produtos img{
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
-}
-
-
-.input-select {
-  width: 185px;
-  height: 30px;
-  background-color: white;
-  margin-left: 15px;
-  border-radius: 10px;
-  margin-top: -25px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-
-
-}
-
-.linha-divisa{
-  min-height: 800px;
-  height: auto;
-  border: solid 0.5px black;
-  margin-left: 25px;
-  float: left;
-  margin-top: 10px;
-}
-
-.area-produtos{
-  width: 1200px;
-  min-height: 500px;
-  height: auto;
-  background-color: white;
-  float: right;
-
-}
-
-.area-brindes{
-  width: 1150px;
-  min-height: 570px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-
-}
-
-.caixa-produtos{
-  width: 260px;
-  min-height: 370px;
-  height: auto;
-  background-color: white;
-  float: left;
-  margin-left: 55px;
-  margin-bottom: 20px;
-
-
-}
-
-.caixa-produtos-brindes{
-  width: 288px;
-  min-height: 400px;
-  height: auto;
-  background-color: white;
-  float: left;
-  margin-top: 45px;
-  margin-left: 60px;
-  border: 1px solid #cccdd5;
-
-}
-
-.card-imagem-brinde img{
-  width: 288px;
-  height: 288px;
-  background-color: white;
-}
-
-.descricao-brinde{
-  width: 275px;
-  min-height: 80px;
-  height: auto;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.descricao-brinde p{
-  margin-top: 15px;
-  font-size: 20px;
-  color: #000;
-  margin-bottom: 20px;
-  font-family: Helvetica;
-  margin: 14px;
-  text-align: center;
-}
-
-.descricao-brinde span{
-  line-height: 14px;
-  font-size: 20px;
-  font-family: Gadugi;
-  font-weight: bold;
-  margin-left: 105px;
-}
-
-.descricao-brinde input[type="submit"]{
-  width: 150px;
-  background-color: #5fa83a;
-  color: white;
-  padding: 14px 20px;
-  border: 1px solid rgba(27,31,35,.2);
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 5px;
-  font-family: Gadugi;
-  font-size:17px;
-  margin-left: 65px;
-  margin-bottom: 5px;
-}
-.descricao-brinde input[type="submit"]:hover{
-  background-color: #226b17;
-  transition: 0.5s;
-}
-
-  /* background-color: #EA720F;
- border-color: #EA720F;
- border-width: 0;
- color: #FFFFFF;
- display: block;
- padding: 15px 30px;
- text-transform: uppercase;
- ;
-  */
-
-
-
-.caixa-foto-produto{
-  width: 190px;
-  height: 210px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(10%);
-}
-
-.caixa-foto-produto img{
-  width: 200px;
-  height: 210px;
-  background-color: white;
-
-
-}
-
-.infromacoes-produto{
-  width: 200px;
-  min-height: 30px;
-  background-color: white;
-  transform: translateY(100%);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 16px;
-  font-family: arial;
-}
-
-.botao-produto{
-  width: 240px;
-  height: 35px;
-  background-color:#15233a;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  margin-top: 30px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  line-height: 35px;
-  cursor: pointer;
-
-}
-
-/* Produtos para compra */
-
-.carrinho-compras{
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/carrinho_compras.png");
-  background-size: 50px 50px;
-  margin-left: auto;
-
-}
-
-.caixa-produtos-compra{
-  width: 260px;
-  height: 390px;
-  background-color: white;
-  float: left;
-  margin-top: 45px;
-  margin-left: 55px;
-
-}
-
-
-/* Pagina de eventos*/
-.caixa_filtro_eventos{
-  width: 100%;
-  height: 60px;
-  background-color: white;
-  margin-bottom: 10px;
-
-}
-
-.filtro_evento{
-  width: 250px;
-  height: 50px;
-  background-color: white;
-  font-family: Gadugi;
-  font-size: 17px;
-  border-radius: 4px;
-  margin: 5px;
-  margin-left: auto;
-  float: right;
-
-}
-
-.option_filtro_evento{
-  text-align: center;
-
-}
-
-.header-title-eventos h3{
-  width: 100%;
-  height: 100px;
-  font-family: Gadugi;
-}
-
-.body-eventos-informacoes{
-  width: 800px;
-  height: 250px;
-  background-color: white;
-}
-
-.area-div-data{
-  width: 100px;
-  height: 100px;
-  float: left;
-}
-
-.box-data{
-  width:100px;
-  height:100px;
-  transform: translateX(20%);
-  background-color: black;
-}
-
-.area-div-conteudo{
-  width: 650px;
-  height: 400px;
-  margin-left: auto;
-}
-
-
-.box-nome-evento{
-  width: 100%;
-  height: 50px;
-  background-color: white;
-  float: inherit;
-  font-family: Helvetica;
-  font-size: 23px;
-  font-weight: lighter;
-}
-
-.box-descricao-evento{
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  float: inherit;
-  font-family: Gadugi;
-  font-size: 17px;
-  font-weight: lighter;
-  text-align: justify;
-}
-
-.localidade-evento{
-  width: 300px;
-  height: 120px;
-  background-color: white;
-  margin-top: -20px;
-
-}
-
-.linha{
-  width: 1px;
-  height: 85px;
-  border: 0.5px solid #cccdd5;
-  float: left;
-}
-
-.localidade-evento h6{
-  font-family: Helvetica;
-  font-size: 17px;
-  color:#000;
-  margin-left: 15px;
-  margin: 10px;
-  margin-bottom: 10px;
-}
-
-.localidade-evento span{
-  font-family: Gadugi;
-  font-size: 17px;
-  font-weight: lighter;
-  color: black;
-}
-/* Modal da tabela nutricional */
-
-.modal-tabela-nutrional{
-  width: 500px;
-  min-height: 400px;
-  height: auto;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.modal-header-tabela-nutrional{
-  width: 95%;
-  height: 50px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.modal-header-tabela-nutrional h4{
-  width: 85%;
-  height: 10px;
-  font-family: arial;
-  font-weight: bold;
-  text-align: center;
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(50%);
-
-}
-
-.modal-header-tabela-nutrional h5{
-  font-weight: lighter;
-  text-align: center;
-  font-size: 17px;
-  font-family: arial;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-
-
-.modal-body-tabela-nutrional{
-  width: 95%;
-  height: 255px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.quantidade-porcao{
-  width: 80%;
-  height: 50px;
-  background-color: white;
-  float: left;
-  padding-top: 20px;
-
-}
-
-.quantidade-porcao h5{
-  font-weight: lighter;
-  font-size: 17px;
-  font-family: arial;
-  margin-top: 5px;
-  margin-left: 15px;
-
-}
-
-.porcentagem-porcao{
-  width: 20%;
-  height: 50px;
-  background-color: white;
-  margin-left: auto;
-  padding-top: 20px;
-
-}
-
-.porcentagem-porcao h5{
-  font-weight: lighter;
-  font-size: 17px;
-  font-family: arial;
-  margin-top: 5px;
-
-}
-
-
-.modal-footer-tabela-nutrional{
-  width: 95%;
-  height: 50px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.modal_anuncio{
-  width: 390px;
-  height: 800px;
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-  font-family: Helvetica;
-}
-
-.modal-form-anuncio{
-  width: 288px;
-  height: 500px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.form-anuncio input{
-  width: 288px;
-  height: 20px;
-  padding: 0.2em;
-  border:none;
-  border-bottom: 2px solid #15233a;
-  margin-bottom: 30px;
-  background-color: #fff;
-  display: block;
-
-}
-
-.select-anuncio{
-  width: 288px;
-  height: 30px;
-  padding: 0.2em;
-  border: 1px solid #CCC;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  display: block;
-
-}
-
-
-.form-anuncio input[type="submit"]{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Gadugi;
+
+  }
+
+  /* Pagina de cadastro */
+
+
+  .principal-cadastro{
+    width:700px;
+    height: 200px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .principal-cadastro-juridico{
+    width:600px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .escolha-cadastro{
+    width: 350px;
+    height:120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .escolha-cadastro-header{
+    width: 100%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
+
+  .escolha-cadastro-body{
+    width: 700px;
+    height: 200px;
+    margin-left: -170px;
+  }
+
+  .icone-escolha-cadastro{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+
+  }
+
+  .icone-escolha-cadastro img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+  }
+
+  .icone-escolha-cadastro span{
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+    color: #000;
+    font-family: Helvetica;
+    margin-left: 5px;
+  }
+
+  .cadastro-header-title{
+    width: 100%;
+    height:50px;
+  }
+
+  .cadastro-header-title h5{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+  /*  Pagna de prodtos */
+
+  .principal{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+  }
+  .principal_promo{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+  }
+  .principal_pagamento{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+  .menu_filtos-produtos{
+    width: 210px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    float: left;
+    border: 1px solid #cccdd5;
+    margin:10px 10px;
+    border-radius: 4px
+
+  }
+
+
+  .menu_filtos-produtos h3{
+    height: 30px;
+    background-color: white;
+    color: #15233a;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* transform: translateX(35%); */
+    font-family: Helvetica;
+    font-size: 15px;
+
+  }
+
+
+  .menu_filtos-produtos img{
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+  }
+
+
+  .input-select {
+    width: 185px;
+    height: 30px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: -25px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+
+
+  }
+
+  .linha-divisa{
+    min-height: 800px;
+    height: auto;
+    border: solid 0.5px black;
+    margin-left: 25px;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .area-produtos{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    background-color: white;
+    float: right;
+
+  }
+
+  .area-brindes{
+    width: 1150px;
+    min-height: 570px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+  }
+
+  .caixa-produtos{
+    width: 260px;
+    min-height: 370px;
+    height: auto;
+    background-color: white;
+    float: left;
+    margin-left: 55px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .caixa-produtos-brindes{
     width: 288px;
-    height: 40px;
-    background-color: #416baf;
-   color: #FFFFFF;
-   display: block;
-   margin: 0 auto;
-   padding: 15px 50px;
-   margin-top: 5px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    float: left;
+    margin-top: 45px;
+    margin-left: 60px;
+    border: 1px solid #cccdd5;
+
+  }
+
+  .card-imagem-brinde img{
+    width: 288px;
+    height: 288px;
+    background-color: white;
+  }
+
+  .descricao-brinde{
+    width: 275px;
+    min-height: 80px;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .descricao-brinde p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    margin: 14px;
+    text-align: center;
+  }
+
+  .descricao-brinde span{
+    line-height: 14px;
+    font-size: 20px;
+    font-family: Gadugi;
+    font-weight: bold;
+    margin-left: 105px;
+  }
+
+  .descricao-brinde input[type="submit"]{
+    width: 150px;
+    background-color: #5fa83a;
+    color: white;
+    padding: 14px 20px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: Gadugi;
+    font-size:17px;
+    margin-left: 65px;
+    margin-bottom: 5px;
+  }
+  .descricao-brinde input[type="submit"]:hover{
+    background-color: #226b17;
+    transition: 0.5s;
+  }
+
+    /* background-color: #EA720F;
+  border-color: #EA720F;
+  border-width: 0;
+  color: #FFFFFF;
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  ;
+    */
+
+
+
+  .caixa-foto-produto{
+    width: 190px;
+    height: 210px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(10%);
+  }
+
+  .caixa-foto-produto img{
+    width: 200px;
+    height: 210px;
+    background-color: white;
+
+
+  }
+
+  .infromacoes-produto{
+    width: 200px;
+    min-height: 30px;
+    background-color: white;
+    transform: translateY(100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial;
+  }
+
+  .botao-produto{
+    width: 240px;
+    height: 35px;
+    background-color:#15233a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+
+  }
+
+  /* Produtos para compra */
+
+  .carrinho-compras{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/carrinho_compras.png");
+    background-size: 50px 50px;
+    margin-left: auto;
+
+  }
+
+  .caixa-produtos-compra{
+    width: 260px;
+    height: 390px;
+    background-color: white;
+    float: left;
+    margin-top: 45px;
+    margin-left: 55px;
+
+  }
+
+
+  /* Pagina de eventos*/
+  .caixa_filtro_eventos{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 10px;
+
+  }
+
+  .filtro_evento{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    font-family: Gadugi;
+    font-size: 17px;
+    border-radius: 4px;
+    margin: 5px;
+    margin-left: auto;
+    float: right;
+
+  }
+
+  .option_filtro_evento{
+    text-align: center;
+
+  }
+
+  .header-title-eventos h3{
+    width: 100%;
+    height: 100px;
+    font-family: Gadugi;
+  }
+
+  .body-eventos-informacoes{
+    width: 800px;
+    height: 250px;
+    background-color: white;
+  }
+
+  .area-div-data{
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  .box-data{
+    width:100px;
+    height:100px;
+    transform: translateX(20%);
+    background-color: black;
+  }
+
+  .area-div-conteudo{
+    width: 650px;
+    height: 400px;
+    margin-left: auto;
+  }
+
+
+  .box-nome-evento{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    float: inherit;
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+
+  .box-descricao-evento{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    float: inherit;
+    font-family: Gadugi;
+    font-size: 17px;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .localidade-evento{
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    margin-top: -20px;
+
+  }
+
+  .linha{
+    width: 1px;
+    height: 85px;
+    border: 0.5px solid #cccdd5;
+    float: left;
+  }
+
+  .localidade-evento h6{
+    font-family: Helvetica;
+    font-size: 17px;
+    color:#000;
+    margin-left: 15px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  .localidade-evento span{
+    font-family: Gadugi;
+    font-size: 17px;
+    font-weight: lighter;
+    color: black;
+  }
+  /* Modal da tabela nutricional */
+
+  .modal-tabela-nutrional{
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal-header-tabela-nutrional{
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal-header-tabela-nutrional h4{
+    width: 85%;
+    height: 10px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(50%);
+
+  }
+
+  .modal-header-tabela-nutrional h5{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+
+  .modal-body-tabela-nutrional{
+    width: 95%;
+    height: 255px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .quantidade-porcao{
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    float: left;
+    padding-top: 20px;
+
+  }
+
+  .quantidade-porcao h5{
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: arial;
+    margin-top: 5px;
+    margin-left: 15px;
+
+  }
+
+  .porcentagem-porcao{
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    padding-top: 20px;
+
+  }
+
+  .porcentagem-porcao h5{
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: arial;
+    margin-top: 5px;
+
+  }
+
+
+  .modal-footer-tabela-nutrional{
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal_anuncio{
+    width: 390px;
+    height: 800px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    font-family: Helvetica;
+  }
+
+  .modal-form-anuncio{
+    width: 288px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .form-anuncio input{
+    width: 288px;
+    height: 20px;
+    padding: 0.2em;
+    border:none;
+    border-bottom: 2px solid #15233a;
+    margin-bottom: 30px;
+    background-color: #fff;
+    display: block;
+
+  }
+
+  .select-anuncio{
+    width: 288px;
+    height: 30px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+
+  }
+
+
+  .form-anuncio input[type="submit"]{
+      width: 288px;
+      height: 40px;
+      background-color: #416baf;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    margin-top: 5px;
+      padding: 9px 50px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 17px;
+  }
+  .form-anuncio input[type="button"]:hover{
+      background-color: #15233a;
+      color: #FFFFFF;
+  }
+
+
+  /*Css modal perfil juridico*/
+  .form-perfil input{
+    width: 288px;
+    height: 20px;
+    padding: 0.2em;
+    border:none;
+    margin-bottom: 13px;
+    border-bottom: 2px solid #15233a;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .select-perfil{
+    width: 288px;
+    height: 30px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+
+  }
+
+
+  .form-perfil input[type="submit"]{
+      width: 288px;
+      height: 40px;
+      background-color: #416baf;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
     padding: 9px 50px;
-   border-radius: 4px;
-   font-family: Helvetica;
-   font-size: 17px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 17px;
+  }
+
+  .form-perfil input[type="button"]:hover{
+      background-color: #15233a;
+      color: #FFFFFF;
+  }
+
+  p.modal-title-campos-anuncio{
+    font-weight: lighter;
+    float: left;
+    margin-bottom: 15px;
+  }
+  .data{
+    width:100px;
+    height: 100px;
+  }
+
+  .titleRegulamento{
+    font-family: Helvetica;
+    font-size: 23px;
+  }
+  .textRegulamento{
+    font-family: Gadugi;
+    font-size: 18px;
+  }
+
+  /* Estilização das telas de estgios de compra */
+
+  .loginMain{
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-color: white;
+    margin-top: 120px;
+  }
+
+  .bannerLogin{
+    width: 50%;
+    height: 657px;
+    float: left;
+    background-image: url("../img/banner_login.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 657px;
+
+  }
+
+  .form_compra{
+    width: 850px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 35px;
+    font-family: Gadugi;
+  }
+
+  #titulo_login{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .label_compra{
+    font-weight: 100;
+    color: #707070;
+  }
+
+  #caixa_login{
+    width: 330px;
+  }
+
+  .caixa_logo{
+    width: 370px;
+    height: 65px;
+    margin-bottom: -30px;
+    background-color: #e57510;
+    background-image: url("../img/logo_transparente.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 53px 62px;
+  }
+
+  #botao_cadastro{
+    width: 100%;
+    background-color: #ffdd93;
+    color: #ffad00;
+  }
+
+  #btnlogar{
+    width: 100%;
+  }
+
+  .form_compra strong{
+    font-weight: bold;
+  }
+
+  .form_compra p{
+    font-style: Gadugi;
+    margin-top: 10px;
+    padding: 7px;
+    border-bottom: 1px solid #000;
+
+  }
+
+  .status_compra{
+    width: 470px;
+    height: 80px;
+    background-image: url("../img/compra.png");
+    background-size: 440px 80px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .formulario_endereco{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    float: left;
+    font-style: Helvetica;
+
+  }
+
+  .formulario_endereco label{
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .formulario_endereco input[type="text"]{
+    width: 350px;
+    padding: 10px 3%;
+    font-size: 1em;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    color: #666;
+    outline: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .formulario_endereco select{
+    width: 350px;
+    padding: 10px 3%;
+    font-size: 1em;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    color: #666;
+    outline: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .pagamento{
+    width: 480px;
+    height: 70px;
+    background-image: url("../img/pagamento.png");
+    background-size: 440px 80px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .form_compra input[type="button"]{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: Gadugi;
+    font-size: 20px;
+    color: #fff;
+    background-color: #2c4b7c;
+    transition: 0.3s;
+    margin-top: -20px;
+    margin-left: 600px;
+    cursor: pointer;
+  }
+
+  .head-tabela{
+    width: 88%;
+    height: 32px;
+    padding: 12px 30px;
+    overflow: hidden;
+    background: #e2525c;
+  }
+
+  .head-tabela span{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .btn-close {
+    font-size: 28px;
+    display: block;
+    float: right;
+    color: #fff;
+  }
+  .cadastro-item1{
+    width:248px;
+    height: 110px;
+    float: left;
+    padding: 20px;
+    margin-right: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+  .cadastro-item1:hover{
+    border: 1px solid #EA720F;
+  }
+  .cadastro-item2:hover{
+    border: 1px solid #EA720F;
+  }
+  .cadastro-item2{
+    width:250px;
+    height: 110px;
+    float: left;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+  .iconCadastro{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+  }
+  .txtCadastroItem{
+    width:250px;
+    height: 30px;
+    margin-top: 20px;
+    color: #000;
+    font-family: Gadugi;
+    text-align: center;
+    font-size:25px;
+  }
 }
-.form-anuncio input[type="button"]:hover{
-    background-color: #15233a;
-    color: #FFFFFF;
-}
+
+@media screen and (min-device-width:1px) and (max-device-width:600px){
 
 
-/*Css modal perfil juridico*/
-.form-perfil input{
-  width: 288px;
-  height: 20px;
-  padding: 0.2em;
-  border:none;
-  margin-bottom: 13px;
-  border-bottom: 2px solid #15233a;
-  margin-bottom: 30px;
-  margin-bottom: 30px;
-}
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
 
- .select-perfil{
-  width: 288px;
-  height: 30px;
-  padding: 0.2em;
-  border: 1px solid #CCC;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  display: block;
-
- }
+  #container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
 
 
- .form-perfil input[type="submit"]{
+  }
+
+  .Abrirmodal{
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 530px;
+    border-radius: 5px;
+
+    }
+
+  #msg_login{
+    width: 280px;
+    height: 20px;
+    padding-top: 5px;
+    color: #fff;
+    font-family: Gadugi;
+    text-align: center;
+    background-color: #f00;
+    display: none;
+  }
+
+
+
+
+  .cadastar{
+      width: 100%;
+      background-color: #EA720F;
+      border-color: #EA720F;
+      border-width: 0;
+      color: #FFFFFF;
+      display: block;
+      margin: 0 auto;
+      padding: 15px 50px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      cursor: pointer;
+
+  }
+
+  /* Modal de login */
+
+  .modal-principal-login{
+    width: 500px;
+    height: 430px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .modal-body-login{
+    width: 450px;
+    height:310px;
+    background-color: white;
+
+  }
+
+  .modal-icones{
+    width: 380px;
+    height: 300px;
+    transform: translateY(10%);
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .icone-escolha-login{
+    width: 180px;
+    height: 160px;
+    background-color:white;
+    float: left;
+    transform: translateY(20%);
+    margin-left: 10px;
+    cursor: pointer;
+
+  }
+
+  .icone-escolha-login:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .icone-escolha-login img{
+    width: 180px;
+    height: 160px;
+  }
+  /* Modal de autenticacao */
+
+  .modal-login{
+    width: 330px;
+    height: 430px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+  }
+
+  .modal-header-login{
+    width:90%;
+    height: 35px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  h4.modal-title-login{
+    width: 100%;
+    height: 28px;
+    font-family: Helvetica;
+    padding-top: 25px;
+    font-size: 19px;
+
+  }
+
+  p.modal-title-campos-login{
+    font-family: Helvetica;
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  a.modal-fechar{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    float: right;
+    margin-left: -10px;
+    background-image: url("../img/icon_close.png");
+    background-size: 20px 20px;
+    cursor: pointer;
+  }
+
+  .modal-body-login{
+    width: 328px;
+    height:360px;
+    background-color: white;
+  }
+
+  .modal-box-icone-login{
     width: 288px;
-    height: 40px;
-    background-color: #416baf;
-   color: #FFFFFF;
-   display: block;
-   margin: 0 auto;
-   padding: 9px 50px;
-   margin-top: 5px;
-   border-radius: 4px;
-   font-family: Helvetica;
-   font-size: 17px;
-}
+    height: 275px;
+    background-color: white;
+  }
 
-.form-perfil input[type="button"]:hover{
-    background-color: #15233a;
+  .icone-login{
+    width: 130px;
+    height: 90px;
+    background-image: url("../img/icon_logo.png");
+    background-size: 130px 90px;
+    transform: translateX(75%);
+  }
+
+
+  .modal-form-login{
+    width: 288px;
+    height: 190px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-login input{
+    width: 288px;
+    height: 46px;
+    padding: 0.2em;
+    display: block;
+    border:none;
+  }
+
+
+  .form-login input[type="button"]{
+      width: 288px;
+    background-color: #EA720F;
     color: #FFFFFF;
-}
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  .form-login input[type="button"]:hover{
+    background-color: #c4610f;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 
-p.modal-title-campos-anuncio{
-  font-weight: lighter;
-  float: left;
-  margin-bottom: 15px;
-}
-.data{
-  width:100px;
-  height: 100px;
-}
+  .modal-footer-login{
+    width: 288px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Gadugi;
 
-.titleRegulamento{
-  font-family: Helvetica;
-  font-size: 23px;
-}
-.textRegulamento{
-  font-family: Gadugi;
-  font-size: 18px;
-}
+  }
 
-/* Estilização das telas de estgios de compra */
+  /* Pagina de cadastro */
 
-.loginMain{
-  width: 50%;
-  height: 500px;
-  float: left;
-  background-color: white;
-  margin-top: 120px;
-}
 
-.bannerLogin{
-  width: 50%;
-  height: 657px;
-  float: left;
-  background-image: url("../img/banner_login.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 657px;
+  .principal-cadastro{
+    width:700px;
+    height: 200px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
 
-}
+  .principal-cadastro-juridico{
+    width:600px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 
-.form_compra{
-  width: 850px;
-  min-height: 500px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  margin-top: 35px;
-  font-family: Gadugi;
-}
+  }
 
-#titulo_login{
-  font-size: 40px;
-  text-align: left;
-  padding-bottom: 10px;
-}
+  .escolha-cadastro{
+    width: 350px;
+    height:120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
 
-.label_compra{
-  font-weight: 100;
-  color: #707070;
-}
+  .escolha-cadastro-header{
+    width: 100%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
 
-#caixa_login{
-  width: 330px;
-}
+  .escolha-cadastro-body{
+    width: 700px;
+    height: 200px;
+    margin-left: -170px;
+  }
 
-.caixa_logo{
-  width: 370px;
-  height: 65px;
-  margin-bottom: -30px;
-  background-color: #e57510;
-  background-image: url("../img/logo_transparente.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 53px 62px;
-}
+  .icone-escolha-cadastro{
+    width: 50px;
+    height: 50px;
+    background-color: white;
 
-#botao_cadastro{
-  width: 100%;
-  background-color: #ffdd93;
-  color: #ffad00;
-}
+  }
 
-#btnlogar{
-  width: 100%;
-}
+  .icone-escolha-cadastro img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+  }
 
-.form_compra strong{
-  font-weight: bold;
-}
+  .icone-escolha-cadastro span{
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+    color: #000;
+    font-family: Helvetica;
+    margin-left: 5px;
+  }
 
-.form_compra p{
-  font-style: Gadugi;
-  margin-top: 10px;
-  padding: 7px;
-  border-bottom: 1px solid #000;
+  .cadastro-header-title{
+    width: 100%;
+    height:50px;
+  }
 
-}
+  .cadastro-header-title h5{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
 
-.status_compra{
-  width: 470px;
-  height: 80px;
-  background-image: url("../img/compra.png");
-  background-size: 440px 80px;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-}
+  }
 
-.formulario_endereco{
-  width: 400px;
-  height: 300px;
-  background-color: white;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 25px;
-  float: left;
-  font-style: Helvetica;
+  /*  Pagna de prodtos */
 
-}
+  .principal{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 
-.formulario_endereco label{
-  font-weight: bold;
-  margin-top: 10px;
-}
+  }
+  .principal_promo{
+    width: 1200px;
+    height: 900px;;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 
-.formulario_endereco input[type="text"]{
-  width: 350px;
-  padding: 10px 3%;
-  font-size: 1em;
-  border: 1px solid #d5dbdb;
-  border-radius: 4px;
-  color: #666;
-  outline: 0;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
+  }
+  .principal_pagamento{
+    width: 1200px;
+    min-height: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
 
-.formulario_endereco select{
-  width: 350px;
-  padding: 10px 3%;
-  font-size: 1em;
-  border: 1px solid #d5dbdb;
-  border-radius: 4px;
-  color: #666;
-  outline: 0;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
+  .menu_filtos-produtos{
+    width: 210px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    float: left;
+    border: 1px solid #cccdd5;
+    margin:10px 10px;
+    border-radius: 4px
 
-.pagamento{
-  width: 480px;
-  height: 70px;
-  background-image: url("../img/pagamento.png");
-  background-size: 440px 80px;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-}
+  }
 
-.form_compra input[type="button"]{
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  font-family: Gadugi;
-  font-size: 20px;
-  color: #fff;
-  background-color: #2c4b7c;
-  transition: 0.3s;
-  margin-top: -20px;
-  margin-left: 600px;
-  cursor: pointer;
-}
 
-.head-tabela{
-  width: 88%;
-  height: 32px;
-  padding: 12px 30px;
-  overflow: hidden;
-  background: #e2525c;
-}
+  .menu_filtos-produtos h3{
+    height: 30px;
+    background-color: white;
+    color: #15233a;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* transform: translateX(35%); */
+    font-family: Helvetica;
+    font-size: 15px;
 
-.head-tabela span{
-  font-size: 25px;
-  color: white;
-  font-family: sans-serif;
-}
+  }
 
-.btn-close {
-  font-size: 28px;
+
+  .menu_filtos-produtos img{
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+  }
+
+
+  .input-select {
+    width: 185px;
+    height: 30px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: -25px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+
+
+  }
+
+  .linha-divisa{
+    min-height: 800px;
+    height: auto;
+    border: solid 0.5px black;
+    margin-left: 25px;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .area-produtos{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    background-color: white;
+    float: right;
+
+  }
+
+  .area-brindes{
+    width: 1150px;
+    min-height: 570px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+  }
+
+  .caixa-produtos{
+    width: 260px;
+    min-height: 370px;
+    height: auto;
+    background-color: white;
+    float: left;
+    margin-left: 55px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .caixa-produtos-brindes{
+    width: 288px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    margin-right: auto;
+    margin-bottom: 55px;
+    margin-left: auto;
+    border: 1px solid #cccdd5;
+
+  }
+
+  .card-imagem-brinde img{
+    width: 288px;
+    height: 288px;
+    background-color: white;
+  }
+
+  .descricao-brinde{
+    width: 275px;
+    min-height: 80px;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .descricao-brinde p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    margin: 14px;
+    text-align: center;
+  }
+
+  .descricao-brinde span{
+    line-height: 14px;
+    font-size: 20px;
+    font-family: Gadugi;
+    font-weight: bold;
+    margin-left: 105px;
+  }
+
+  .descricao-brinde input[type="submit"]{
+    width: 150px;
+    background-color: #5fa83a;
+    color: white;
+    padding: 14px 20px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: Gadugi;
+    font-size:17px;
+    margin-left: 65px;
+    margin-bottom: 5px;
+  }
+  .descricao-brinde input[type="submit"]:hover{
+    background-color: #226b17;
+    transition: 0.5s;
+  }
+
+    /* background-color: #EA720F;
+  border-color: #EA720F;
+  border-width: 0;
+  color: #FFFFFF;
   display: block;
-  float: right;
-  color: #fff;
-}
-.cadastro-item1{
-  width:248px;
-  height: 110px;
-  float: left;
-  padding: 20px;
-  margin-right: 120px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  float: left;
-}
-.cadastro-item1:hover{
-  border: 1px solid #EA720F;
-}
-.cadastro-item2:hover{
-  border: 1px solid #EA720F;
-}
-.cadastro-item2{
-  width:250px;
-  height: 110px;
-  float: left;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  float: left;
-}
-.iconCadastro{
-  width: 50px;
-  height: 50px;
-  margin-left: 100px;
-}
-.txtCadastroItem{
-  width:250px;
-  height: 30px;
-  margin-top: 20px;
-  color: #000;
-  font-family: Gadugi;
-  text-align: center;
-  font-size:25px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  ;
+    */
+
+
+
+  .caixa-foto-produto{
+    width: 190px;
+    height: 210px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(10%);
+  }
+
+  .caixa-foto-produto img{
+    width: 200px;
+    height: 210px;
+    background-color: white;
+
+
+  }
+
+  .infromacoes-produto{
+    width: 200px;
+    min-height: 30px;
+    background-color: white;
+    transform: translateY(100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial;
+  }
+
+  .botao-produto{
+    width: 240px;
+    height: 35px;
+    background-color:#15233a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+
+  }
+
+  /* Produtos para compra */
+
+  .carrinho-compras{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/carrinho_compras.png");
+    background-size: 50px 50px;
+    margin-left: auto;
+
+  }
+
+  .caixa-produtos-compra{
+    width: 260px;
+    height: 390px;
+    background-color: white;
+    float: left;
+    margin-top: 45px;
+    margin-left: 55px;
+
+  }
+
+
+  /* Pagina de eventos*/
+  .caixa_filtro_eventos{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 10px;
+
+  }
+
+  .filtro_evento{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    font-family: Gadugi;
+    font-size: 17px;
+    border-radius: 4px;
+    margin: 5px;
+    margin-left: auto;
+    float: right;
+
+  }
+
+  .option_filtro_evento{
+    text-align: center;
+
+  }
+
+  .header-title-eventos h3{
+    width: 100%;
+    height: 100px;
+    font-family: Gadugi;
+  }
+
+  .body-eventos-informacoes{
+    width: 800px;
+    height: 250px;
+    background-color: white;
+  }
+
+  .area-div-data{
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  .box-data{
+    width:100px;
+    height:100px;
+    transform: translateX(20%);
+    background-color: black;
+  }
+
+  .area-div-conteudo{
+    width: 650px;
+    height: 400px;
+    margin-left: auto;
+  }
+
+
+  .box-nome-evento{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    float: inherit;
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+
+  .box-descricao-evento{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    float: inherit;
+    font-family: Gadugi;
+    font-size: 17px;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .localidade-evento{
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    margin-top: -20px;
+
+  }
+
+  .linha{
+    width: 1px;
+    height: 85px;
+    border: 0.5px solid #cccdd5;
+    float: left;
+  }
+
+  .localidade-evento h6{
+    font-family: Helvetica;
+    font-size: 17px;
+    color:#000;
+    margin-left: 15px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  .localidade-evento span{
+    font-family: Gadugi;
+    font-size: 17px;
+    font-weight: lighter;
+    color: black;
+  }
+  /* Modal da tabela nutricional */
+
+  .modal-tabela-nutrional{
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal-header-tabela-nutrional{
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal-header-tabela-nutrional h4{
+    width: 85%;
+    height: 10px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(50%);
+
+  }
+
+  .modal-header-tabela-nutrional h5{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+
+  .modal-body-tabela-nutrional{
+    width: 95%;
+    height: 255px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .quantidade-porcao{
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    float: left;
+    padding-top: 20px;
+
+  }
+
+  .quantidade-porcao h5{
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: arial;
+    margin-top: 5px;
+    margin-left: 15px;
+
+  }
+
+  .porcentagem-porcao{
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    padding-top: 20px;
+
+  }
+
+  .porcentagem-porcao h5{
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: arial;
+    margin-top: 5px;
+
+  }
+
+
+  .modal-footer-tabela-nutrional{
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .modal_anuncio{
+    width: 390px;
+    height: 800px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    font-family: Helvetica;
+  }
+
+  .modal-form-anuncio{
+    width: 288px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .form-anuncio input{
+    width: 288px;
+    height: 20px;
+    padding: 0.2em;
+    border:none;
+    border-bottom: 2px solid #15233a;
+    margin-bottom: 30px;
+    background-color: #fff;
+    display: block;
+
+  }
+
+  .select-anuncio{
+    width: 288px;
+    height: 30px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+
+  }
+
+
+  .form-anuncio input[type="submit"]{
+      width: 288px;
+      height: 40px;
+      background-color: #416baf;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    margin-top: 5px;
+      padding: 9px 50px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 17px;
+  }
+  .form-anuncio input[type="button"]:hover{
+      background-color: #15233a;
+      color: #FFFFFF;
+  }
+
+
+  /*Css modal perfil juridico*/
+  .form-perfil input{
+    width: 288px;
+    height: 20px;
+    padding: 0.2em;
+    border:none;
+    margin-bottom: 13px;
+    border-bottom: 2px solid #15233a;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .select-perfil{
+    width: 288px;
+    height: 30px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+
+  }
+
+
+  .form-perfil input[type="submit"]{
+      width: 288px;
+      height: 40px;
+      background-color: #416baf;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 9px 50px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 17px;
+  }
+
+  .form-perfil input[type="button"]:hover{
+      background-color: #15233a;
+      color: #FFFFFF;
+  }
+
+  p.modal-title-campos-anuncio{
+    font-weight: lighter;
+    float: left;
+    margin-bottom: 15px;
+  }
+  .data{
+    width:100px;
+    height: 100px;
+  }
+
+  .titleRegulamento{
+    font-family: Helvetica;
+    font-size: 23px;
+  }
+  .textRegulamento{
+    font-family: Gadugi;
+    font-size: 18px;
+  }
+
+  /* Estilização das telas de estgios de compra */
+
+  .loginMain{
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-color: white;
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 250px;
+  }
+
+  .bannerLogin{
+    width: 100%;
+    height: 657px;
+    background-color: white;
+
+  }
+
+  .form_compra{
+    width: 850px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 35px;
+    font-family: Gadugi;
+  }
+
+  #titulo_login{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .label_compra{
+    font-weight: 100;
+    color: #707070;
+  }
+
+  #caixa_login{
+    width: 330px;
+  }
+
+  .caixa_logo{
+    width: 370px;
+    height: 65px;
+    margin-bottom: -30px;
+    background-color: #e57510;
+    background-image: url("../img/logo_transparente.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 53px 62px;
+  }
+
+  #botao_cadastro{
+    width: 100%;
+    background-color: #ffdd93;
+    color: #ffad00;
+  }
+
+  #btnlogar{
+    width: 100%;
+  }
+
+  .form_compra strong{
+    font-weight: bold;
+  }
+
+  .form_compra p{
+    font-style: Gadugi;
+    margin-top: 10px;
+    padding: 7px;
+    border-bottom: 1px solid #000;
+
+  }
+
+  .status_compra{
+    width: 470px;
+    height: 80px;
+    background-image: url("../img/compra.png");
+    background-size: 440px 80px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .formulario_endereco{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    font-style: Helvetica;
+
+  }
+
+  .formulario_endereco label{
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .formulario_endereco input[type="text"]{
+    width: 350px;
+    padding: 10px 3%;
+    font-size: 1em;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    color: #666;
+    outline: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .formulario_endereco select{
+    width: 350px;
+    padding: 10px 3%;
+    font-size: 1em;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    color: #666;
+    outline: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .pagamento{
+    width: 480px;
+    height: 70px;
+    background-image: url("../img/pagamento.png");
+    background-size: 440px 80px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .form_compra input[type="button"]{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: Gadugi;
+    font-size: 20px;
+    color: #fff;
+    background-color: #2c4b7c;
+    transition: 0.3s;
+    margin-top: -20px;
+    margin-left: 600px;
+    cursor: pointer;
+  }
+
+  .head-tabela{
+    width: 88%;
+    height: 32px;
+    padding: 12px 30px;
+    overflow: hidden;
+    background: #e2525c;
+  }
+
+  .head-tabela span{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .btn-close {
+    font-size: 28px;
+    display: block;
+    float: right;
+    color: #fff;
+  }
+  .cadastro-item1{
+    width:248px;
+    height: 110px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .cadastro-item1:hover{
+    border: 1px solid #EA720F;
+  }
+  .cadastro-item2:hover{
+    border: 1px solid #EA720F;
+  }
+  .cadastro-item2{
+    width:250px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 30px;
+  }
+  .iconCadastro{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+  }
+  .txtCadastroItem{
+    width:250px;
+    height: 30px;
+    margin-top: 20px;
+    color: #000;
+    font-family: Gadugi;
+    text-align: center;
+    font-size:25px;
+  }
 }

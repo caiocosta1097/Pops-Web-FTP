@@ -34,7 +34,7 @@
     ?>
   <header><?php require_once 'header.php'; ?></header>
 
-    <div class="principal">
+    <div class="principal_promo">
       <div class="titulo_pagina font-titulo">
           <h1 class="title-pag-promocoes">Promoções</h1>
       </div>
