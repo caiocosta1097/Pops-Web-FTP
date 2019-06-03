@@ -61,7 +61,7 @@
     transition: 0.5s;
   }
 
-  .nav{
+  nav{
     width: 100%;
     height: auto;
     background-color: #e57510;
@@ -86,7 +86,7 @@
   }
 
   #conteudo_inicio{
-    width: 1000px;
+    width: 880px;
     height: 60%;
     color: #fff;
   }
@@ -300,6 +300,7 @@
 
 
 @media screen and (min-device-width:1px) and (max-device-width:600px){
+
   .centralizarX{
     margin-left: auto;
     margin-right: auto;
@@ -593,4 +594,6 @@
   .swal2-popup {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+
+
 }

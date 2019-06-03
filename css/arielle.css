@@ -320,6 +320,14 @@
     background-color: white;
 
   }
+  .principal_pagamento{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
   .menu_filtos-produtos{
     width: 210px;
     min-height: 400px;
@@ -1420,6 +1428,14 @@
     background-color: white;
 
   }
+  .principal_pagamento{
+    width: 1200px;
+    min-height: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
 
   .menu_filtos-produtos{
     width: 210px;
@@ -2080,7 +2096,8 @@
     margin-bottom: 10px;
     margin-top: 20px;
     margin-left: 25px;
-    float: left;
+    margin-right: auto;
+    margin-left: auto;
     font-style: Helvetica;
 
   }

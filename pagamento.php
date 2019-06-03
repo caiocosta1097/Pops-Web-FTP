@@ -26,7 +26,7 @@
            <?php require_once('header.php')?>
        </header>
 
-       <div class="principal">
+       <div class="principal_pagamento">
          <!-- Título da página -->
          <div class="titulo_pagina font-titulo">
              <div class="pagamento"></div>
